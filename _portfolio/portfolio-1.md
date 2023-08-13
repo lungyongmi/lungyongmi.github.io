@@ -4,14 +4,12 @@ title: "Segment Customers with RFM and K-Means"
 #collection: portfolio
 ---
 
-Project Goal：
-Segment customers with RFM and K-Means in order to target customers efficiently
-透過 RFM 模型與  KMeans 演算法進行客戶分群，找出目標客戶。
+#### Project Goal：<br/>
+Segment customers with RFM and K-Means in order to target customers efficiently<br/>
+透過 RFM 模型與  KMeans 演算法進行客戶分群，找出目標客戶。<br/>
 
-Dataset Overview：
+#### Dataset Overview：<br/>
 This is a transnational data set which contains all the transactions occurring between 2010/12/01 and 2011/12/09 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
 
-Data Source：
+#### Data Source：
 [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/352/online+retail)
-
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
