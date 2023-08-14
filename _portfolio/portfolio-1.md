@@ -3,7 +3,6 @@ title: "Segment Customers with RFM and K-Means"
 #excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
 #collection: portfolio
 ---
- 
 
 ### Project Goal：<br/>
 <font size=3> Segment customers with RFM and K-Means in order to target customers efficiently<br/>
@@ -15,9 +14,6 @@ title: "Segment Customers with RFM and K-Means"
 ### Data Source：
 <font size=3><a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a></font>
 
-### Tools：
-<font size=3> Python, Power BI </font>
-
 ### Analysis Process：
 <font size=3> 
    1. Reading and Exploring Data<br/>
@@ -27,13 +23,14 @@ title: "Segment Customers with RFM and K-Means"
    5. K-Means Clustering<br/>
    6. Data Visualization<br/>
 </font> <br/>
+<font size=3> Tools：Python, Power BI </font>
 
-<a href=""><font size=3 color='red'>**_🔗 Check out Full Code here._**</font></a> 
+
+**<font size=3 color='red'> <a href="">_🔗 Check out Full Code here._</font></a>** 
 
 
 ### <font color='blue'> 1. Reading and Exploring Data <a href="">🔗 Full Code</a> </font>
 **<font size=3> a. Import Libraries </font>**<br/> 
-
 ```python
 # Import Libraries for Dataframe and Visualization
 import numpy as np
@@ -53,8 +50,8 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 ```
 <br/> 
 
-<font size=3> ** b. Read and Explore Data**</br> There are 8 columns and 541909 rows.</font>
-
+**<font size=3> b. Read and Explore Data </font>**
+<font size=3> There are 8 columns and 541909 rows. </font>
 ```python
 df = pd.read_excel('Online Retail.xlsx')
 df.head()
@@ -66,7 +63,6 @@ df.head()
 **<font size=3> a. Check and Drop Missing Values and Duplicates </font>**<br/> 
 **<font size=3> b. Check and Change Data Types </font>**
 <font size=3> The data type of ‘CustomerID’ should be object type. </font>  
-
 ```python
 df.dtypes
 df['CustomerID'] = df['CustomerID'].astype('int').astype('str')
@@ -80,13 +76,11 @@ df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 ```
 
 ### <font color='blue'> 3. Calculating RFM Metrics <a href="">🔗 Full Code</a> </font>
-**<font size=3> a. RFM represents Recency, Frequency and Monetary. RFM is a model used to segment customers base by their purchasing patterns. </font>**<br/> 
-<font size=3> R (Recency) : How long ago since the last purchase of each customer.<br/> F (Frequency) : How often each customer make purchases.<br/> M (Monetary) : Total amount of money each customer spends.<br/> </font>
+**<font size=3> a. RFM represents Recency, Frequency and Monetary. <br/>        RFM is a model used to segment customers base by their purchasing patterns. </font>**<br/> 
+<font size=3>       R (Recency) : How long ago since the last purchase of each customer.<br/>       F (Frequency) : How often each customer make purchases.<br/>        M (Monetary) : Total amount of money each customer spends.<br/> </font>
 <br/>
 
-**<font size=3> b. RFM Score </font>**
-<font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font>
- 
+**<font size=3> b. RFM Score**<br/> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font>
 ```python
 r_labels = range(4, 0, -1)
 f_labels = range(1, 5)
