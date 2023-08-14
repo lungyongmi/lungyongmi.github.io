@@ -11,7 +11,8 @@ title: "Segment Customers with RFM and K-Means"
 ### Dataset Overview：<br/>
 <font size=3> This is a transnational data set which contains all the transactions occurring between 2010/12/01 and 2011/12/09 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. </font>
 
-### Data Source：<a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a><br/> ### Tools：Python, Power BI </font>**
+### Data Source：<a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a>
+### Tools：Python, Power BI
 
 
 ### Analysis Process：
@@ -22,9 +23,9 @@ title: "Segment Customers with RFM and K-Means"
    4. Data Preprocessing<br/>
    5. K-Means Clustering<br/>
    6. Data Visualization
-</font>
+</font><br/>
 
-**<font size=3>🔗 Check out Full Code</font>**<b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">here.</a></b>
+**<font size=3>🔗 Check out Full Code </font>**<b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">here.</a></b>
 
 ### <font color='blue'> 1. Reading and Exploring Data </font>
 **<font size=3> a. Import Libraries </font>**
@@ -54,7 +55,7 @@ df.head()
 <img src='/images/P1_01.png' width='90%' height='90%'>
 <br/>
 
-### <font color='blue'> 2. Data Cleaning <a href="">🔗 Full Code</a> </font>
+### <font color='blue'> 2. Data Cleaning 🔗 <a href="">Full Code</a> </font>
 **<font size=3> a. Check and Drop Missing Values and Duplicates </font>**<br/>
 **<font size=3> b. Check and Change Data Types </font>**<br/> <font size=3> The data type of ‘CustomerID’ should be object type. </font>  
 ```python
