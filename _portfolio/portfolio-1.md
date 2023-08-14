@@ -22,10 +22,10 @@ title: "Segment Customers with RFM and K-Means"
    4. Data Preprocessing<br/>
    5. K-Means Clustering<br/>
    6. Data Visualization<br/>
-</font> 
+</font><br/>
 
-**<font size=3 color='red'> Tools：Python, Power BI <br/> <a href="">_🔗 Check out Full Code here._</a> </font>**
-
+**<font size=3> Tools：Python, Power BI </font>**
+**[🔗 Check out Full Code here.]()**
 
 ### <font color='blue'> 1. Reading and Exploring Data </font>
 **<font size=3> a. Import Libraries </font>**
@@ -46,37 +46,38 @@ from sklearn.cluster import KMeans
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 ```
+<br/>
 
-**<font size=3> b. Read and Explore Data </font>** <font size=3> There are 8 columns and 541909 rows. </font>
+**<font size=3> b. Read and Explore Data </font>** <font size=3><br/> There are 8 columns and 541909 rows. </font>
 ```python
 df = pd.read_excel('Online Retail.xlsx')
 df.head()
 ```
-<img src='/images/P1_01.png' width='75%' height='75%'>
+<img src='/images/P1_01.png' width='80%' height='80%'>
 
 ### <font color='blue'> 2. Data Cleaning <a href="">🔗 Full Code</a> </font>
-**<font size=3> a. Check and Drop Missing Values and Duplicates </font>** 
-**<font size=3> b. Check and Change Data Types </font>** <font size=3> The data type of ‘CustomerID’ should be object type. </font>  
+**<font size=3> a. Check and Drop Missing Values and Duplicates </font>**<br/>
+**<font size=3> b. Check and Change Data Types </font>**<br/> <font size=3> The data type of ‘CustomerID’ should be object type. </font>  
 ```python
 df.dtypes
 df['CustomerID'] = df['CustomerID'].astype('int').astype('str')
 ```
 
-**<font size=3> c. Exclude Noisy Data </font>** <font size=3> Remove negative and 0 values in ‘Quantity’ and ‘UnitPrice’. </font>
+**<font size=3> c. Exclude Noisy Data </font>**<br/> <font size=3> Remove negative and 0 values in ‘Quantity’ and ‘UnitPrice’. </font>
 ```python
 df.describe()
 df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 ```
 
 ### <font color='blue'> 3. Calculating RFM Metrics <a href="">🔗 Full Code</a> </font>
-**<font size=3> a. RFM represents Recency, Frequency and Monetary. <br/>**
+**<font size=3> a. RFM represents Recency, Frequency and Monetary. </font>**<br/>
 <font size=3> 
-<table> RFM is a model used to segment customers base by their purchasing patterns.<br/>
-<table> R (Recency) : How long ago since the last purchase of each customer.<br/>
-<table> F (Frequency) : How often each customer make purchases.<br/>
-<table> M (Monetary) : Total amount of money each customer spends.<br/> </font>
+<table> RFM is a model used to segment customers base by their purchasing patterns.<br/></table> 
+<table> R (Recency) : How long ago since the last purchase of each customer.<br/></table> 
+<table> F (Frequency) : How often each customer make purchases.<br/></table> 
+<table> M (Monetary) : Total amount of money each customer spends.<br/></table>  </font>
 
-**<font size=3> b. RFM Score</font>** <font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font>
+**<font size=3> b. RFM Score </font>**<br/> <font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font>
 ```python
 r_labels = range(4, 0, -1)
 f_labels = range(1, 5)
@@ -101,8 +102,8 @@ rfm.head()
 <img src='/images/P1_02.png' width='75%' height='75%'>
 <br/>
 
-### <font color='blue'> 4. Data Preprocessing <a href="">🔗 Full Code</a> </font>
-**<font size=3> a. Detect and Remove Outliers Using the IQR Method </font>**<br/> 
+### <font color='blue'> 4. Data Preprocessing </font>
+**<font size=3> a. Detect and Remove Outliers Using the IQR Method </font>**
 
 ```python
 x = ['Recency', 'Frequency', 'Monetary']
@@ -119,7 +120,7 @@ plt.show()
 <img src='/images/P1_03.png' width='75%' height='75%'>
 <br/>
 
-**<font size=3> b. RFM Segmentation by RFM Score </font>** <font size=3> Segment customers into 6 groups by RFM Score. </font>
+**<font size=3> b. RFM Segmentation by RFM Score </font>**<br/> <font size=3> Segment customers into 6 groups by RFM Score. </font>
 
 <style>
 table th:first-of-type {
@@ -143,7 +144,7 @@ table th:nth-of-type(2) {
 <img src='/images/P1_04.png' width='75%' height='75%'>
 <br/>
 
-**<font size=3> c. Standardization </font>** <font size=3> It’s important to rescale RFM values so that they have a comparable scale. </font>
+**<font size=3> c. Standardization </font>**<br/> <font size=3> It’s important to rescale RFM values so that they have a comparable scale. </font>
 
 ```python
 rfm_RFM = rfm[['Recency', 'Frequency', 'Monetary']]
@@ -175,10 +176,10 @@ plt.xticks(range_k)
 plt.show()
 ```
 <br/>
-<img src='/images/P1_05.png' width='75%' height='75%'>
+<img src='/images/P1_05.png' width='60%' height='60%'>
 <br/>
 
-### <font color='blue'> 5. K-Means Clustering <a href="">🔗 Full Code</a> </font>
+### <font color='blue'> 5. K-Means Clustering </font>
 
 ```python
 # Choose K=3
@@ -213,7 +214,7 @@ plt.xlabel('Metric')
 plt.ylabel('Value')
 plt.show()
 ```
-<img src='/images/P1_07.png' width='50%' height='50%'>
+<img src='/images/P1_07.png' width='75%' height='75%'>
 <br/>
 
 ```python
