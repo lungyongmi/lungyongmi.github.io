@@ -26,15 +26,15 @@ title: "Segment Customers with RFM and K-Means"
    4. Data Preprocessing<br/>
    5. K-Means Clustering<br/>
    6. Data Visualization<br/>
-</font>
+</font> <br/>
 
-*<font size=3, color='red'> 🔗 Check out Full Code [here]().</font>* 
+_<font size=3, color='red'> 🔗 Check out Full Code [here](). </font>_
 
 
 ### <font color='blue'> 1. Reading and Exploring Data (🔗 [Full Code]()) </font>
 **<font size=3>a. Import Libraries</font>** <br/> 
 
-    ```py
+ <pre>
     import numpy as np
     import pandas as pd
     import datetime as dt
@@ -48,4 +48,4 @@ title: "Segment Customers with RFM and K-Means"
 
     import warnings
     warnings.simplefilter(action='ignore', category=FutureWarning)
-    ```
+</pre>
