@@ -11,7 +11,8 @@ title: "Segment Customers with RFM and K-Means"
 ### Dataset Overview：<br/>
 <font size=3> This is a transnational data set which contains all the transactions occurring between 2010/12/01 and 2011/12/09 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. </font>
 
-### Data Source：<a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a>
+### Data Source：<a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a><br/> ### Tools：Python, Power BI </font>**
+
 
 ### Analysis Process：
 <font size=3> 
@@ -23,8 +24,7 @@ title: "Segment Customers with RFM and K-Means"
    6. Data Visualization
 </font>
 
-### <font size=3> Tools：Python, Power BI </font>**<br/>
-**<font size=3 color='red'>🔗 Check out Full Code </font>** <b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">here.</a></b>
+**<font size=3>🔗 Check out Full Code</font>**<b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">here.</a></b>
 
 ### <font color='blue'> 1. Reading and Exploring Data </font>
 **<font size=3> a. Import Libraries </font>**
@@ -69,7 +69,7 @@ df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 ```
 
 ### <font color='blue'> 3. Calculating RFM Metrics <a href="">🔗 Full Code</a> </font>
-**<font size=3> a. RFM represents Recency, Frequency and Monetary. RFM is a model used to segment customers base by their purchasing patterns.</font>**<br/>
+**<font size=3> a. RFM represents Recency, Frequency and Monetary.<br/> &nbsp;&nbsp;&nbsp;&nbsp; RFM is a model used to segment customers base by their purchasing patterns.</font>**<br/>
 <font size=3> &nbsp;&nbsp;&nbsp;&nbsp; R (Recency) : How long ago since the last purchase of each customer.<br/> &nbsp;&nbsp;&nbsp;&nbsp; F (Frequency) : How often each customer make purchases.<br/> &nbsp;&nbsp;&nbsp;&nbsp; M (Monetary) : Total amount of money each customer spends.</font><br/>
 
 
@@ -120,10 +120,10 @@ plt.show()
 
 <style>
 table th:first-of-type {
-    width: 4cm;
+    width: 2cm;
 }
 table th:nth-of-type(2) {
-    width: 6cm;
+    width: 3cm;
 }
 </style>
 
