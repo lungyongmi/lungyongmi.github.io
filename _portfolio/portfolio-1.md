@@ -56,7 +56,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 df = pd.read_excel('Online Retail.xlsx')
 df.head()
 ```
-<img src='/images/P1_01.png'>
+<img src='/images/P1_01.png' width='50%' height='50%'>
 </br>
 
 ### <font color='blue'> 2. Data Cleaning <a href="">🔗 Full Code</a> </font>
@@ -102,7 +102,7 @@ rfm['RFM_Score'] = rfm[['R', 'F', 'M']].sum(axis = 1)
 rfm.head()
 ```
 <br/>
-<img src='/images/P1_02.png'>
+<img src='/images/P1_02.png' width='50%' height='50%'>
 <br/>
 
 ### <font color='blue'> 4. Data Preprocessing <a href="">🔗 Full Code</a> </font>
@@ -120,7 +120,7 @@ plt.ylabel('Range')
 plt.show()
 ```
 <br/>
-<img src='/images/P1_03.png'>
+<img src='/images/P1_03.png' width='50%' height='50%'>
 <br/>
 
 **<font size=3> b. RFM Segmentation by RFM Score </font>** 
@@ -135,8 +135,8 @@ plt.show()
 | 5-6       | at_risk             | 
 | < 4       | hibernating         | 
  
-<br/>
-<img src='/images/P1_04.png'>
+<br/> 
+<img src='/images/P1_04.png' width='50%' height='50%'>
 <br/>
 
 **<font size=3> c. Standardization </font>**
@@ -173,7 +173,7 @@ plt.xticks(range_k)
 plt.show()
 ```
 <br/>
-<img src='/images/P1_05.png'>
+<img src='/images/P1_05.png' width='50%' height='50%'>
 <br/>
 
 ### <font color='blue'> 5. K-Means Clustering <a href="">🔗 Full Code</a> </font>
@@ -190,7 +190,7 @@ rfm_k3.groupby(['Cluster', 'Segment']).agg({'CustomerID':'count',
 'RFM_Score':'mean'}).round(2)
 ```
 <br/>
-<img src='/images/P1_06.png'>
+<img src='/images/P1_06.png' width='50%' height='50%'>
 <br/>
 
 ```python
@@ -213,7 +213,7 @@ plt.ylabel('Value')
 plt.show()
 ```
 <br/>
-<img src='/images/P1_07.png'>
+<img src='/images/P1_07.png' width='50%' height='50%'>
 <br/>
 
 ```python
@@ -241,5 +241,5 @@ plt.legend()
 plt.show()
 ```
 <br/>
-<img src='/images/P1_08.png'>
+<img src='/images/P1_08.png' width='50%' height='50%'>
 <br/>
