@@ -4,18 +4,17 @@ title: "Segment Customers with RFM and K-Means"
 #collection: portfolio
 ---
 
-### Project Goal：<br/>
+### Project Goal: <br/>
 <font size=3> Segment customers with RFM and K-Means in order to target customers efficiently<br/>
 透過 RFM 模型與  KMeans 演算法進行客戶分群，找出目標客戶。<br/> </font>
 
-### Dataset Overview：<br/>
+### Dataset Overview: <br/>
 <font size=3> This is a transnational data set which contains all the transactions occurring between 2010/12/01 and 2011/12/09 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. </font>
 
-### Data Source：<a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a>
-### Tools：Python, Power BI
+### Data Source: <a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a><br/>### Tools: Python, Power BI
 
 
-### Analysis Process：
+### Analysis Process:
 <font size=3> 
    1. Reading and Exploring Data<br/>
    2. Data Cleaning<br/>
@@ -25,7 +24,7 @@ title: "Segment Customers with RFM and K-Means"
    6. Data Visualization
 </font><br/>
 
-**<font size=3>🔗 Check out Full Code </font>**<b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">here.</a></b>
+**<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">here.</a></b>
 
 ### <font color='blue'> 1. Reading and Exploring Data </font>
 **<font size=3> a. Import Libraries </font>**
@@ -55,7 +54,7 @@ df.head()
 <img src='/images/P1_01.png' width='90%' height='90%'>
 <br/>
 
-### <font color='blue'> 2. Data Cleaning 🔗 <a href="">Full Code</a> </font>
+### <font color='blue'> 2. Data Cleaning </font>
 **<font size=3> a. Check and Drop Missing Values and Duplicates </font>**<br/>
 **<font size=3> b. Check and Change Data Types </font>**<br/> <font size=3> The data type of ‘CustomerID’ should be object type. </font>  
 ```python
@@ -69,7 +68,7 @@ df.describe()
 df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 ```
 
-### <font color='blue'> 3. Calculating RFM Metrics <a href="">🔗 Full Code</a> </font>
+### <font color='blue'> 3. Calculating RFM Metrics  🔗 <a href="">Full Code</a> </font>
 **<font size=3> a. RFM represents Recency, Frequency and Monetary.<br/> &nbsp;&nbsp;&nbsp;&nbsp; RFM is a model used to segment customers base by their purchasing patterns.</font>**<br/>
 <font size=3> &nbsp;&nbsp;&nbsp;&nbsp; R (Recency) : How long ago since the last purchase of each customer.<br/> &nbsp;&nbsp;&nbsp;&nbsp; F (Frequency) : How often each customer make purchases.<br/> &nbsp;&nbsp;&nbsp;&nbsp; M (Monetary) : Total amount of money each customer spends.</font><br/>
 
@@ -99,7 +98,7 @@ rfm.head()
 <br/>
 
 
-### <font color='blue'> 4. Data Preprocessing </font>
+### <font color='blue'> 4. Data Preprocessing  🔗 <a href="">Full Code</a> </font>
 **<font size=3> a. Detect and Remove Outliers Using the IQR Method </font>**
 
 ```python
@@ -176,7 +175,7 @@ plt.show()
 <img src='/images/P1_05.png' width='75%' height='75%'>
 <br/>
 
-### <font color='blue'> 5. K-Means Clustering </font>
+### <font color='blue'> 5. K-Means Clustering  🔗 <a href="">Full Code</a> </font>
 
 ```python
 # Choose K=3
