@@ -25,7 +25,8 @@ title: "Segment Customers with RFM and K-Means"
 </font><br/>
 
 **<font size=3> Tools：Python, Power BI </font>**<br/>
-**<font size=3>[🔗 Check out Full Code here.](https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means)**</font>
+
+**<font size=3><b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">🔗 Check out Full Code here.</a></b></font>
 
 ### <font color='blue'> 1. Reading and Exploring Data </font>
 **<font size=3> a. Import Libraries </font>**
@@ -118,14 +119,14 @@ plt.show()
 
 **<font size=3> b. RFM Segmentation by RFM Score </font>**<br/> <font size=3> Segment customers into 6 groups by RFM Score. </font>
 
-| RFM Score | Segment             | 
+| :RFM Score: | :Segment:            | 
 |:----------|------------------:| 
-| <img width=200/>> 10      | <img width=300/>champions           |
-| 9-10      | potential_loyalists | 
-| 8         | need_attention      | 
-| 7         | about_to_sleep      | 
-| 5-6       | at_risk             | 
-| < 4       | hibernating         | 
+|<img width=100/>> 10| <img width=100/>champions          |
+|<img width=100/>9-10| <img width=100/>potential_loyalists| 
+|<img width=100/>8   | <img width=100/>need_attention     | 
+|<img width=100/>7   | <img width=100/>about_to_sleep     | 
+|<img width=100/>5-6 | <img width=100/>at_risk            | 
+|<img width=100/>< 4 | <img width=100/>hibernating        | 
  
 <br/> 
 <img src='/images/P1_04.png' width='75%' height='75%'>
