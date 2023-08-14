@@ -53,8 +53,8 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 ```
 <br/> 
 
-**<font size=3> b. Read and Explore Data </font>**<br/>
-<font size=3> There are 8 columns and 541909 rows. </font><br/>  
+**<font size=3> b. Read and Explore Data </font>**
+<font size=3> There are 8 columns and 541909 rows. </font>
 
 ```python
 df = pd.read_excel('Online Retail.xlsx')
@@ -65,16 +65,16 @@ df.head()
 
 ### <font color='blue'> 2. Data Cleaning <a href="">🔗 Full Code</a> </font>
 **<font size=3> a. Check and Drop Missing Values and Duplicates </font>**<br/> 
-**<font size=3> b. Check and Change Data Types </font>**<br/> 
-<font size=3> The data type of ‘CustomerID’ should be object type. </font><br/>  
+**<font size=3> b. Check and Change Data Types </font>**
+<font size=3> The data type of ‘CustomerID’ should be object type. </font>  
 
 ```python
 df.dtypes
 df['CustomerID'] = df['CustomerID'].astype('int').astype('str')
 ```
 
-**<font size=3> c. Exclude Noisy Data </font>**<br/> 
-<font size=3> Remove negative and 0 values in ‘Quantity’ and ‘UnitPrice’. </font><br/>  
+**<font size=3> c. Exclude Noisy Data </font>**
+<font size=3> Remove negative and 0 values in ‘Quantity’ and ‘UnitPrice’. </font>
 ```python
 df.describe()
 df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
@@ -83,9 +83,10 @@ df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 ### <font color='blue'> 3. Calculating RFM Metrics <a href="">🔗 Full Code</a> </font>
 **<font size=3> a. RFM represents Recency, Frequency and Monetary. RFM is a model used to segment customers base by their purchasing patterns. </font>**<br/> 
 <font size=3> R (Recency) : How long ago since the last purchase of each customer.<br/> F (Frequency) : How often each customer make purchases.<br/> M (Monetary) : Total amount of money each customer spends.<br/> </font>
+<br/>
 
-**<font size=3> b. RFM Score </font>**<br/> 
-<font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font><br/>
+**<font size=3> b. RFM Score </font>**
+<font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font>
  
 ```python
 r_labels = range(4, 0, -1)
@@ -129,11 +130,11 @@ plt.show()
 <img src='/images/P1_03.jpg'>
 <br/>
 
-**<font size=3> b. RFM Segmentation by RFM Score </font>**<br/> 
-<font size=3> Segment customers into 6 groups by RFM Score. </font><br/>  
+**<font size=3> b. RFM Segmentation by RFM Score </font>** 
+<font size=3> Segment customers into 6 groups by RFM Score. </font>
 
 | RFM Score | Segment             | 
-| ----------| ------------------- | 
+|:----------:|:------------------:| 
 | > 10      | champions           |
 | 9-10      | potential_loyalists | 
 | 8         | need_attention      | 
@@ -145,8 +146,8 @@ plt.show()
 <img src='/images/P1_04.jpg'>
 <br/>
 
-**<font size=3> c. Standardization </font>**<br/> 
-<font size=3> It’s important to rescale RFM values so that they have a comparable scale. </font><br/> 
+**<font size=3> c. Standardization </font>**
+<font size=3> It’s important to rescale RFM values so that they have a comparable scale. </font>
 
 ```python
 rfm_RFM = rfm[['Recency', 'Frequency', 'Monetary']]
@@ -158,7 +159,7 @@ rfm_standard.columns = ['Recency', 'Frequency', 'Monetary']
 rfm_standard.head()
 ```
 
-**<font size=3> d. Find the Optimal Number of Clusters Using Elbow Method </font>**<br/> 
+**<font size=3> d. Find the Optimal Number of Clusters Using Elbow Method </font>**
 
 ```python
 wcss =[]
