@@ -11,8 +11,7 @@ title: "Segment Customers with RFM and K-Means"
 ### Dataset Overview：<br/>
 <font size=3> This is a transnational data set which contains all the transactions occurring between 2010/12/01 and 2011/12/09 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. </font>
 
-### Data Source：
-<font size=3><a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a></font>
+### Data Source：<a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a>
 
 ### Analysis Process：
 <font size=3> 
@@ -21,10 +20,10 @@ title: "Segment Customers with RFM and K-Means"
    3. Calculating RFM Metrics<br/>
    4. Data Preprocessing<br/>
    5. K-Means Clustering<br/>
-   6. Data Visualization<br/>
+   6. Data Visualization
 </font><br/>
 
-**<font size=3> Tools：Python, Power BI </font>**<br/> <font size=3><b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">🔗 Check out Full Code here.</a></b></font>
+### <font size=3> Tools：Python, Power BI </font>**<br/> <font size=3><b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">🔗 Check out Full Code here.</a></b></font>
 
 ### <font color='blue'> 1. Reading and Exploring Data </font>
 **<font size=3> a. Import Libraries </font>**
@@ -70,7 +69,8 @@ df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 
 ### <font color='blue'> 3. Calculating RFM Metrics <a href="">🔗 Full Code</a> </font>
 **<font size=3> a. RFM represents Recency, Frequency and Monetary. RFM is a model used to segment customers base by their purchasing patterns.</font>**<br/>
-<font size=3> R (Recency) : How long ago since the last purchase of each customer.<br/>       F (Frequency) : How often each customer make purchases.<br/> M (Monetary) : Total amount of money each customer spends.<br/></font>
+<font size=3> &nbsp;&nbsp;&nbsp;&nbsp; R (Recency) : How long ago since the last purchase of each customer.<br/> &nbsp;&nbsp;&nbsp;&nbsp; F (Frequency) : How often each customer make purchases.<br/> &nbsp;&nbsp;&nbsp;&nbsp; M (Monetary) : Total amount of money each customer spends.</font><br/>
+
 
 **<font size=3> b. RFM Score </font>**<br/> <font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font>
 ```python
@@ -117,9 +117,9 @@ plt.show()
 
 **<font size=3> b. RFM Segmentation by RFM Score </font>**<br/> <font size=3> Segment customers into 6 groups by RFM Score. </font>
 
-| :RFM Score: | :Segment:            | 
-|:----------|------------------:| 
-|> 10| champions          |
+|RFM Score|Segment        | 
+|:--------|--------------:| 
+|<div style="width: 30pt">> 10</div>| champions          |
 |9-10| potential_loyalists| 
 |8   | need_attention     | 
 |7   | about_to_sleep     | 
