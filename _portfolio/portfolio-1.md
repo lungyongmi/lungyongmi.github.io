@@ -32,7 +32,7 @@ title: "Segment Customers with RFM and K-Means"
 
 
 ### <font color='blue'> 1. Reading and Exploring Data <a href="">🔗 Full Code</a> </font>
-**<font size=3>a. Import Libraries</font>** <br/> 
+**<font size=3> a. Import Libraries </font>**<br/> 
 
 ```python
 # Import Libraries for Dataframe and Visualization
@@ -51,3 +51,201 @@ from sklearn.cluster import KMeans
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 ```
+<br/> 
+
+**<font size=3> b. Read and Explore Data </font>**<br/>
+<font size=3> There are 8 columns and 541909 rows. </font><br/>  
+
+```python
+df = pd.read_excel('Online Retail.xlsx')
+df.head()
+```
+<img src='/images/P1_01.jpg'>
+</br>
+
+### <font color='blue'> 2. Data Cleaning <a href="">🔗 Full Code</a> </font>
+**<font size=3> a. Check and Drop Missing Values and Duplicates </font>**<br/> 
+**<font size=3> b. Check and Change Data Types </font>**<br/> 
+<font size=3> The data type of ‘CustomerID’ should be object type. </font><br/>  
+
+```python
+df.dtypes
+df['CustomerID'] = df['CustomerID'].astype('int').astype('str')
+```
+
+**<font size=3> c. Exclude Noisy Data </font>**<br/> 
+<font size=3> Remove negative and 0 values in ‘Quantity’ and ‘UnitPrice’. </font><br/>  
+```python
+df.describe()
+df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
+```
+
+### <font color='blue'> 3. Calculating RFM Metrics <a href="">🔗 Full Code</a> </font>
+**<font size=3> a. RFM represents Recency, Frequency and Monetary. RFM is a model used to segment customers base by their purchasing patterns. </font>**<br/> 
+<font size=3> R (Recency) : How long ago since the last purchase of each customer.<br/> F (Frequency) : How often each customer make purchases.<br/> M (Monetary) : Total amount of money each customer spends.<br/> </font>
+
+**<font size=3> b. RFM Score </font>**<br/> 
+<font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font><br/>
+ 
+```python
+r_labels = range(4, 0, -1)
+f_labels = range(1, 5)
+m_labels = range(1, 5)
+
+r_quartiles = pd.qcut(rfm['Recency'], q = 4, labels = r_labels)
+f_quartiles = pd.qcut(rfm['Frequency'], q = 4, labels = f_labels)
+m_quartiles = pd.qcut(rfm['Monetary'], q = 4, labels = m_labels)
+
+rfm = rfm.assign(R = r_quartiles,
+                 F = f_quartiles,
+                 M = m_quartiles)
+
+def rfm_seg(x):
+    return str(x['R']) + str(x['F']) + str(x['M'])
+
+rfm['RFM'] = rfm.apply(rfm_seg, axis = 1)
+rfm['RFM_Score'] = rfm[['R', 'F', 'M']].sum(axis = 1)
+rfm.head()
+```
+<br/>
+<img src='/images/P1_02.jpg'>
+<br/>
+
+### <font color='blue'> 4. Data Preprocessing <a href="">🔗 Full Code</a> </font>
+**<font size=3> a. Detect and Remove Outliers Using the IQR Method </font>**<br/> 
+
+```python
+x = ['Recency', 'Frequency', 'Monetary']
+f, ax = plt.subplots(figsize = (8, 6))
+
+sns.boxplot(data = rfm[x], palette = 'Set2')
+plt.yscale('log')
+plt.title('Outliers Variable Distribution', fontsize = 12)
+plt.xlabel('RFM')
+plt.ylabel('Range')
+plt.show()
+```
+<br/>
+<img src='/images/P1_03.jpg'>
+<br/>
+
+**<font size=3> b. RFM Segmentation by RFM Score </font>**<br/> 
+<font size=3> Segment customers into 6 groups by RFM Score. </font><br/>  
+
+| RFM Score | Segment             | 
+| ----------| ------------------- | 
+| > 10      | champions           |
+| 9-10      | potential_loyalists | 
+| 8         | need_attention      | 
+| 7         | about_to_sleep      | 
+| 5-6       | at_risk             | 
+| < 4       | hibernating         | 
+ 
+<br/>
+<img src='/images/P1_04.jpg'>
+<br/>
+
+**<font size=3> c. Standardization </font>**<br/> 
+<font size=3> It’s important to rescale RFM values so that they have a comparable scale. </font><br/> 
+
+```python
+rfm_RFM = rfm[['Recency', 'Frequency', 'Monetary']]
+
+scaler = StandardScaler()
+rfm_standard = scaler.fit_transform(rfm_RFM)
+rfm_standard = pd.DataFrame(rfm_standard)
+rfm_standard.columns = ['Recency', 'Frequency', 'Monetary']
+rfm_standard.head()
+```
+
+**<font size=3> d. Find the Optimal Number of Clusters Using Elbow Method </font>**<br/> 
+
+```python
+wcss =[]
+range_k = range(1, 11)
+
+for k in range_k:
+    kmeans = KMeans(n_clusters = k, random_state = 46)
+    kmeans.fit(rfm_standard)
+    wcss.append(kmeans.inertia_)
+
+f, ax = plt.subplots(figsize = (8, 6))
+
+plt.plot(range_k, wcss, marker = 'o', color = 'black')
+plt.title('The Optimal Number of Clusters', fontsize = 12)
+plt.xlabel('Numbers of Clusters, K', fontsize = 10)
+plt.ylabel('Inertia', fontsize = 10)
+plt.xticks(range_k)
+plt.show()
+```
+<br/>
+<img src='/images/P1_05.jpg'>
+<br/>
+
+### <font color='blue'> 5. K-Means Clustering <a href="">🔗 Full Code</a> </font>
+
+```python
+# Choose K=3
+kmeans = KMeans(n_clusters = 3, random_state = 46)
+kmeans.fit(rfm_standard)
+
+cluster_labels = kmeans.labels_
+rfm_k3 = rfm.assign(Cluster = cluster_labels)
+
+rfm_k3.groupby(['Cluster', 'Segment']).agg({'CustomerID':'count',
+'RFM_Score':'mean'}).round(2)
+```
+<br/>
+<img src='/images/P1_06.jpg'>
+<br/>
+
+```python
+rfm_melt = pd.melt(rfm_standard,
+                   id_vars = ['CustomerID', 'Cluster'],
+                   value_vars = ['Recency', 'Frequency', 'Monetary'],
+                   var_name = 'Metric',
+                   value_name = 'Value')
+
+f, ax = plt.subplots(figsize = (8, 6))
+
+sns.lineplot(data = rfm_melt, x = 'Metric', y = 'Value',
+             hue = 'Cluster', 
+             palette = sns.color_palette('Set2', n_colors=3),
+             sort = False)
+
+plt.title('RFM of Clusters', fontsize = 12)
+plt.xlabel('Metric')
+plt.ylabel('Value')
+plt.show()
+```
+<br/>
+<img src='/images/P1_07.jpg'>
+<br/>
+
+```python
+from mpl_toolkits.mplot3d import Axes3D
+
+colors = ['#66C3A5', '#FC8D62', '#8DA0CB']
+fig = plt.figure(figsize = (8, 6))
+ax = plt.axes(projection = '3d')
+
+for i in range(kmeans.n_clusters):
+    rfm_standard = rfm_k3[rfm_k3['Cluster'] == i]
+    ax.scatter(rfm_standard['Recency'],
+               rfm_standard['Frequency'],
+               rfm_standard['Monetary'],
+               s = 10,
+               label = 'Cluster' + str(i),
+               c = colors[i])
+
+ax.set_xlabel('Recency')
+ax.set_ylabel('Frequency')
+ax.set_zlabel('Monetary')
+
+plt.tight_layout()
+plt.legend()
+plt.show()
+```
+<br/>
+<img src='/images/P1_08.jpg'>
+<br/>
