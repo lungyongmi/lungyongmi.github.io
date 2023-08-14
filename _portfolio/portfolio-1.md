@@ -11,7 +11,8 @@ title: "Segment Customers with RFM and K-Means"
 ### Dataset Overview: <br/>
 <font size=3> This is a transnational data set which contains all the transactions occurring between 2010/12/01 and 2011/12/09 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. </font>
 
-### Data Source: <a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a><br/>### Tools: Python, Power BI
+### Data Source: <a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a>
+### Tools: Python, Power BI
 
 
 ### Analysis Process:
@@ -127,14 +128,14 @@ table th:nth-of-type(2) {
 }
 </style>
 
-|RFM Score|Segment        | 
-|:--------|--------------:| 
-|> 10| champions          |
-|9-10| potential_loyalists| 
-|8   | need_attention     | 
-|7   | about_to_sleep     | 
-|5-6 | at_risk            | 
-|< 4 | hibernating        | 
+|Segment        |RFM Score| 
+|--------------:| |:--------|
+| champions          |> 10|
+| potential_loyalists|9-10| 
+| need_attention     |8   | 
+| about_to_sleep     |7   | 
+| at_risk            |5-6 | 
+| hibernating        |< 4 | 
  
 <br/> 
 <img src='/images/P1_04.png' width='75%' height='75%'>
