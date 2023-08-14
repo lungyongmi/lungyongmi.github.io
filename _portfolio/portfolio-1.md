@@ -28,14 +28,13 @@ title: "Segment Customers with RFM and K-Means"
    6. Data Visualization<br/>
 </font>
 
-<font size=3, color='red'> *🔗 Check out Full Code [here]().* </font>
+*<font size=3, color='red'> 🔗 Check out Full Code [here]().</font>* 
 
 
 ### <font color='blue'> 1. Reading and Exploring Data (🔗 [Full Code]()) </font>
-<font size=3> **a. Import Libraries** </font> <br/> 
+**<font size=3>a. Import Libraries</font>** <br/> 
 
-    ```python
-    # Import Libraries for Dataframe and Visualization
+    ```py
     import numpy as np
     import pandas as pd
     import datetime as dt
@@ -43,7 +42,6 @@ title: "Segment Customers with RFM and K-Means"
     import seaborn as sns
     import matplotlib.pyplot as plt
 
-    # Import Libraries for Machine Learning Algorithm
     import sklearn
     from sklearn.preprocessing import StandardScaler
     from sklearn.cluster import KMeans
