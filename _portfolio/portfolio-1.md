@@ -53,8 +53,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 ```
 <br/> 
 
-**<font size=3> b. Read and Explore Data </font>**
-<font size=3> There are 8 columns and 541909 rows. </font>
+<font size=3> ** b. Read and Explore Data**</br> There are 8 columns and 541909 rows.</font>
 
 ```python
 df = pd.read_excel('Online Retail.xlsx')
