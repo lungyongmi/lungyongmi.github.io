@@ -21,9 +21,10 @@ title: "Segment Customers with RFM and K-Means"
    4. Data Preprocessing<br/>
    5. K-Means Clustering<br/>
    6. Data Visualization
-</font><br/>
+</font>
 
-### <font size=3> Tools：Python, Power BI </font>**<br/> <font size=3><b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">🔗 Check out Full Code here.</a></b></font>
+### <font size=3> Tools：Python, Power BI </font>**<br/>
+**<font size=3 color='red'>🔗 Check out Full Code </font>** <b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">here.</a></b>
 
 ### <font color='blue'> 1. Reading and Exploring Data </font>
 **<font size=3> a. Import Libraries </font>**
@@ -117,9 +118,18 @@ plt.show()
 
 **<font size=3> b. RFM Segmentation by RFM Score </font>**<br/> <font size=3> Segment customers into 6 groups by RFM Score. </font>
 
+<style>
+table th:first-of-type {
+    width: 4cm;
+}
+table th:nth-of-type(2) {
+    width: 6cm;
+}
+</style>
+
 |RFM Score|Segment        | 
 |:--------|--------------:| 
-|<div style="width: 30pt">> 10</div>| champions          |
+|> 10| champions          |
 |9-10| potential_loyalists| 
 |8   | need_attention     | 
 |7   | about_to_sleep     | 
