@@ -46,14 +46,14 @@ from sklearn.cluster import KMeans
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 ```
-<br/>
 
 **<font size=3> b. Read and Explore Data </font>** <font size=3><br/> There are 8 columns and 541909 rows. </font>
 ```python
 df = pd.read_excel('Online Retail.xlsx')
 df.head()
 ```
-<img src='/images/P1_01.png' width='80%' height='80%'>
+<img src='/images/P1_01.png' width='90%' height='90%'>
+<br/>
 
 ### <font color='blue'> 2. Data Cleaning <a href="">🔗 Full Code</a> </font>
 **<font size=3> a. Check and Drop Missing Values and Duplicates </font>**<br/>
@@ -68,14 +68,11 @@ df['CustomerID'] = df['CustomerID'].astype('int').astype('str')
 df.describe()
 df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 ```
+<br/>
 
 ### <font color='blue'> 3. Calculating RFM Metrics <a href="">🔗 Full Code</a> </font>
-**<font size=3> a. RFM represents Recency, Frequency and Monetary. </font>**<br/>
-<font size=3> 
-<table> RFM is a model used to segment customers base by their purchasing patterns.<br/></table> 
-<table> R (Recency) : How long ago since the last purchase of each customer.<br/></table> 
-<table> F (Frequency) : How often each customer make purchases.<br/></table> 
-<table> M (Monetary) : Total amount of money each customer spends.<br/></table>  </font>
+**<font size=3> a. RFM represents Recency, Frequency and Monetary. RFM is a model used to segment customers base by their purchasing patterns.</font>**<br/>
+<font size=3> R (Recency) : How long ago since the last purchase of each customer.<br/>       F (Frequency) : How often each customer make purchases.<br/> M (Monetary) : Total amount of money each customer spends.<br/></font>
 
 **<font size=3> b. RFM Score </font>**<br/> <font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font>
 ```python
@@ -98,9 +95,9 @@ rfm['RFM'] = rfm.apply(rfm_seg, axis = 1)
 rfm['RFM_Score'] = rfm[['R', 'F', 'M']].sum(axis = 1)
 rfm.head()
 ```
-<br/>
 <img src='/images/P1_02.png' width='75%' height='75%'>
 <br/>
+
 
 ### <font color='blue'> 4. Data Preprocessing </font>
 **<font size=3> a. Detect and Remove Outliers Using the IQR Method </font>**
@@ -124,10 +121,10 @@ plt.show()
 
 <style>
 table th:first-of-type {
-    width: 60pt;
+    width: 40pt;
 }
 table th:nth-of-type(2) {
-    width: 100pt;
+    width: 80pt;
 }
 </style>
 
@@ -176,7 +173,7 @@ plt.xticks(range_k)
 plt.show()
 ```
 <br/>
-<img src='/images/P1_05.png' width='60%' height='60%'>
+<img src='/images/P1_05.png' width='75%' height='75%'>
 <br/>
 
 ### <font color='blue'> 5. K-Means Clustering </font>
@@ -192,7 +189,7 @@ rfm_k3 = rfm.assign(Cluster = cluster_labels)
 rfm_k3.groupby(['Cluster', 'Segment']).agg({'CustomerID':'count',
 'RFM_Score':'mean'}).round(2)
 ```
-<img src='/images/P1_06.png' width='75%' height='75%'>
+<img src='/images/P1_06.png' width='60%' height='60%'>
 <br/>
 
 ```python
