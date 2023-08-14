@@ -25,7 +25,7 @@ title: "Segment Customers with RFM and K-Means"
 </font><br/>
 
 **<font size=3> Tools：Python, Power BI </font>**<br/>
-**<font size=3 color='red'>[🔗 Check out Full Code here.](https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means)</font>**
+**[🔗 Check out Full Code here.](https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means)**
 
 ### <font color='blue'> 1. Reading and Exploring Data </font>
 **<font size=3> a. Import Libraries </font>**
@@ -118,18 +118,9 @@ plt.show()
 
 **<font size=3> b. RFM Segmentation by RFM Score </font>**<br/> <font size=3> Segment customers into 6 groups by RFM Score. </font>
 
-<style>
-table th:first-of-type {
-    width: 40pt;
-}
-table th:nth-of-type(2) {
-    width: 80pt;
-}
-</style>
-
 | RFM Score | Segment             | 
-|:----------:|:------------------:| 
-| > 10      | champions           |
+|:----------|------------------:| 
+| <img width=200/>> 10      | <img width=300/>champions           |
 | 9-10      | potential_loyalists | 
 | 8         | need_attention      | 
 | 7         | about_to_sleep      | 
@@ -188,7 +179,7 @@ rfm_k3 = rfm.assign(Cluster = cluster_labels)
 rfm_k3.groupby(['Cluster', 'Segment']).agg({'CustomerID':'count',
 'RFM_Score':'mean'}).round(2)
 ```
-<img src='/images/P1_06.png' width='50%' height='50%'>
+<img src='/images/P1_06.png' width='40%' height='40%'>
 <br/>
 
 ```python
