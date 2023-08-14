@@ -12,7 +12,7 @@ title: "Segment Customers with RFM and K-Means"
 <font size=3> This is a transnational data set which contains all the transactions occurring between 2010/12/01 and 2011/12/09 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. </font>
 
 ### Data Source：
-<font size=3><a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a></font>
+<font size=3 color='black'><a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a></font>
 
 ### Analysis Process：
 <font size=3> 
@@ -24,8 +24,8 @@ title: "Segment Customers with RFM and K-Means"
    6. Data Visualization<br/>
 </font><br/>
 
-**<font size=3> Tools：Python, Power BI </font>**
-**[🔗 Check out Full Code here.]()**
+**<font size=3> Tools：Python, Power BI </font>**<br/>
+**<font size=3 color='red'>[🔗 Check out Full Code here.](https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means)</font>**
 
 ### <font color='blue'> 1. Reading and Exploring Data </font>
 **<font size=3> a. Import Libraries </font>**
@@ -68,7 +68,6 @@ df['CustomerID'] = df['CustomerID'].astype('int').astype('str')
 df.describe()
 df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 ```
-<br/>
 
 ### <font color='blue'> 3. Calculating RFM Metrics <a href="">🔗 Full Code</a> </font>
 **<font size=3> a. RFM represents Recency, Frequency and Monetary. RFM is a model used to segment customers base by their purchasing patterns.</font>**<br/>
@@ -189,7 +188,7 @@ rfm_k3 = rfm.assign(Cluster = cluster_labels)
 rfm_k3.groupby(['Cluster', 'Segment']).agg({'CustomerID':'count',
 'RFM_Score':'mean'}).round(2)
 ```
-<img src='/images/P1_06.png' width='60%' height='60%'>
+<img src='/images/P1_06.png' width='50%' height='50%'>
 <br/>
 
 ```python
