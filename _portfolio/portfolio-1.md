@@ -28,13 +28,13 @@ title: "Segment Customers with RFM and K-Means"
    6. Data Visualization<br/>
 </font> <br/>
 
-_<font size=3, color='red'> 🔗 Check out Full Code [here](). </font>_
+<font size=3, color='red'> 🔗 Check out Full Code [here](). </font>
 
 
 ### <font color='blue'> 1. Reading and Exploring Data (🔗 [Full Code]()) </font>
 **<font size=3>a. Import Libraries</font>** <br/> 
 
- <pre>
+    ```python
     import numpy as np
     import pandas as pd
     import datetime as dt
@@ -48,4 +48,4 @@ _<font size=3, color='red'> 🔗 Check out Full Code [here](). </font>_
 
     import warnings
     warnings.simplefilter(action='ignore', category=FutureWarning)
-</pre>
+    ```
