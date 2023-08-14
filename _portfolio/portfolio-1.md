@@ -28,11 +28,12 @@ title: "Segment Customers with RFM and K-Means"
    6. Data Visualization<br/>
 </font>
 
-_<font size=3, color='red'> 🔗 Check out Full Code [here](). </font>_
+<font size=3, color='red'> *🔗 Check out Full Code [here]().* </font>
 
 
 ### <font color='blue'> 1. Reading and Exploring Data (🔗 [Full Code]()) </font>
-    a. Import Libraries <br/>
+<font size=3> **a. Import Libraries** </font> <br/> 
+
     ```python
     # Import Libraries for Dataframe and Visualization
     import numpy as np
