@@ -27,8 +27,7 @@ title: "Segment Customers with RFM and K-Means"
 
 **<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">here.</a></b>
 
-1.&nbsp;Reading and Exploring Data
--------
+**<font size=3> Reading and Exploring Data </font>**<br/> 
 **<font size=3> a. Import Libraries </font>**
 ```python
 # Import Libraries for Dataframe and Visualization
@@ -48,7 +47,7 @@ import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 ```
 
-**<font size=3> b. Read and Explore Data </font>** <font size=3><br/> There are 8 columns and 541909 rows. </font>
+**<font size=3> b. Read and Explore Data </font>**<br/> <font size=3> There are 8 columns and 541909 rows. </font>
 ```python
 df = pd.read_excel('Online Retail.xlsx')
 df.head()
