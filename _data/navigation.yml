@@ -1,9 +1,9 @@
 # main links links
 main:
-  - title: "Resume"
+  - title: "RESUME"
     url: /cv/
 
-  - title: "Portfolio"
+  - title: "PORTFOLIO"
     url: /portfolio/    
 
   # - title: "Teaching"
