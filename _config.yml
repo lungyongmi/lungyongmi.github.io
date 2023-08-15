@@ -8,7 +8,7 @@
 # Site Settings
 minimal_mistakes_skin    : "dirt"
 locale                   : "en-US"
-title                    : "Home"
+title                    : "ABOUT"
 title_separator          : "-"
 name                     : &name "Wei Lung"
 description              : &description "personal description"
@@ -272,7 +272,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
+  - jemojis
 
 
 # Archives
