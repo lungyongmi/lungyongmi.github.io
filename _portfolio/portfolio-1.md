@@ -247,4 +247,4 @@ plt.show()
 * <font size=3>CLUSTER 1 :<br/> 約佔整體的 11%，RFM 平均接近 4，多為 champions 客戶，須維持與其之間的良好關係，以及其對於品牌的忠誠度。</font>
 * <font size=3>CLUSTER 2 :<br/> 約佔整體的 25%，RFM 平均小於 2，多為 hibernating 客戶。</font> 
 <br/>
-<iframe title="Report Section" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiMzA0YTBlNGYtOWFlZC00N2YyLWJkZDMtZTY2MjlkNTc3MjlmIiwidCI6IjE0ZmM0NDhkLWYxOWEtNDQ4ZS04MjRhLWQ4MmM3MWFhOTg4ZSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="Report Section" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiNDU2NTQ3ZjQtZGZkMi00ZDVlLWJiYTUtYzY3MTYyYTdmMDgwIiwidCI6IjE0ZmM0NDhkLWYxOWEtNDQ4ZS04MjRhLWQ4MmM3MWFhOTg4ZSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
