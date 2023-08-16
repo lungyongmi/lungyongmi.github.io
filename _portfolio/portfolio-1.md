@@ -22,7 +22,7 @@ collection: portfolio
    3. Calculating RFM Metrics<br/>
    4. Data Preprocessing<br/>
    5. K-Means Clustering<br/>
-   6. Conclusion (Data Visualization)
+   6. Conclusion
 </font><br/>
 
 **<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">here.</a></b>
@@ -241,10 +241,10 @@ plt.show()
 <img src='/images/P1_08.png' width='75%' height='75%'>
 <br/>
 
-### <font color='blue'> 6. Conclusion (Data Visualization)  🔗 <a href="">Full Code</a> </font>
+### <font color='blue'> 6. Conclusion 🔗 <a href="">Full Code</a> </font>
 
-* <font size=3>CLUSTER 0 :<br/> &nbsp;&nbsp;&nbsp;&nbsp;約佔整體的 64%，RFM 平均介於 2-3，多為 potential_loyalists 和 need_attention 之客戶，建議列為目標客戶。</font>
-* <font size=3>CLUSTER 1 :<br/> &nbsp;&nbsp;&nbsp;&nbsp;約佔整體的 11%，RFM 平均接近 4，多為 champions 客戶，須維持與其之間的良好關係，以及其對於品牌的忠誠度。</font>
-* CLUSTER 2 :<br/> &nbsp;&nbsp;&nbsp;&nbsp;約佔整體的 25%，RFM 平均小於 2，多為 hibernating 客戶。</font> 
+* <font size=3>CLUSTER 0 :<br/> &nbsp;&nbsp;約佔整體的 64%，RFM 平均介於 2-3，多為 potential_loyalists 和 need_attention 之客戶，建議列為目標客戶。</font>
+* <font size=3>CLUSTER 1 :<br/> &nbsp;&nbsp;約佔整體的 11%，RFM 平均接近 4，多為 champions 客戶，須維持與其之間的良好關係，以及其對於品牌的忠誠度。</font>
+* <font size=3>CLUSTER 2 :<br/> &nbsp;&nbsp;約佔整體的 25%，RFM 平均小於 2，多為 hibernating 客戶。</font> 
 <br/>
-<iframe title="RFM Customer Segmentation" width="800" height="836" src="https://app.powerbi.com/view?r=eyJrIjoiYWIwYThjMWYtYzg2ZC00MWNjLWE3MmItZjczMjc4ZDdjNGVhIiwidCI6IjE0ZmM0NDhkLWYxOWEtNDQ4ZS04MjRhLWQ4MmM3MWFhOTg4ZSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="RFM Customer Segmentation" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYWIwYThjMWYtYzg2ZC00MWNjLWE3MmItZjczMjc4ZDdjNGVhIiwidCI6IjE0ZmM0NDhkLWYxOWEtNDQ4ZS04MjRhLWQ4MmM3MWFhOTg4ZSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
