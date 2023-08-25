@@ -51,6 +51,6 @@ collection: portfolio
 &nbsp;&nbsp;&nbsp;&nbsp; ・使用 XLOOKUP 函數自動顯示各列之類別<br/> </font>
 
 ### <font color='blue'> 3. 資料視覺化與分析 </font>
-<iframe width="700" height="540" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=364B55E5FBC9CC6E%216162&authkey=%21AHYRz-NmI_M8ByM&em=2&ActiveCell='D2'!A1&Item=dashboard2&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+<iframe width="800" height="500" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=364B55E5FBC9CC6E%216162&authkey=%21AHYRz-NmI_M8ByM&em=2&ActiveCell='D2'!A1&Item=dashboard2&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 
 ### <font color='blue'> 4. 結論 </font>
