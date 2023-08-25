@@ -55,6 +55,6 @@ collection: portfolio
 <img src='/images/P2_02.png' width='130%' height='130%'>
 <img src='/images/P2_03.png' width='130%' height='130%'>
 
-<iframe width="900" height="520" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=364B55E5FBC9CC6E%216162&authkey=%21AHYRz-NmI_M8ByM&em=2&ActiveCell='D2'!A1&Item=dashboard2&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+<iframe width="850" height="520" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=364B55E5FBC9CC6E%216162&authkey=%21AHYRz-NmI_M8ByM&em=2&ActiveCell='D2'!A1&Item=dashboard2&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 
 ### <font color='blue'> 4. 結論 </font>
