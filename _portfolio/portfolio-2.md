@@ -26,6 +26,7 @@ collection: portfolio
 **<font size=3> a. 每月紀錄</font>**<br/>
 <img src='/images/P2_01.png' width='110%' height='110%'>
 <font size=3> 以月為單位，紀錄每筆財務明細，結構與設計如下：<br/>
+
 &nbsp;&nbsp;&nbsp;&nbsp; ➊ 月總整理：包含收入、支出與存款<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➋ 年度預算：使用 SPARKLINE 函數，製作各類別已支出金額占預算之進度條<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➌ 無支出日：使用 SQUENCE 函數和條件式格式設，製作行事曆<br/>
@@ -34,8 +35,7 @@ collection: portfolio
 &nbsp;&nbsp;&nbsp;&nbsp; ➏ 收入明細：列出所有收入項目<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➐ 每週明細：使用 SUMIFS 函數紀錄每週支出，以及各類別已支出金額占預算之比例<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➑ 固定支出明細：列出月繳之固定支出明細<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ➒ 支出明細：紀錄所有支出明細，包含日期、內容、金額、子類別、類別與方式 </font>
-<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; ➒ 支出明細：紀錄所有支出明細，包含日期、內容、金額、子類別、類別與方式 </font><br/>
 
 **<font size=3> b. 支出類型 </font>** <br/><font size=3> 將支出類型分為 6 個類別，各類別另有子類別，以利支出分析。</font>
 
@@ -45,9 +45,9 @@ collection: portfolio
 
 ### <font color='blue'> 2. 資料清理 </font>
 <font size=3>
-・彙整各月支出明細<br/>
-・調整並確認各欄資料之格式<br/>
-・使用 XLOOKUP 函數自動顯示各列之類別<br/> </font>
+&nbsp;&nbsp;&nbsp;&nbsp; ・彙整各月支出明細<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; ・調整並確認各欄資料之格式<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; ・使用 XLOOKUP 函數自動顯示各列之類別<br/> </font>
 
 ### <font color='blue'> 3. 資料視覺化與分析 </font>
 ### <font color='blue'> 4. 結論 </font>
