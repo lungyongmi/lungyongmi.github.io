@@ -25,6 +25,7 @@ collection: portfolio
 
 **<font size=3> a. 每月紀錄</font>**
 <br/>
+
 <img src='/images/P2_01.png' width='130%' height='130%'>
 <font size=3> 以月為單位，紀錄每筆財務明細，結構與設計如下：
 <br/>
@@ -36,7 +37,7 @@ collection: portfolio
 &nbsp;&nbsp;&nbsp;&nbsp; ➏ 收入明細：列出所有收入項目<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➐ 每週明細：使用 SUMIFS 函數紀錄每週支出，以及各類別已支出金額占預算之比例<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➑ 固定支出明細：列出月繳之固定支出明細<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ➒ 支出明細：紀錄所有支出明細，包含日期、內容、金額、子類別、類別與方式 </font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp; ➒ 支出明細：紀錄所有支出明細，包含日期、內容、金額、子類別、類別與方式 </font>
 
 **<font size=3> b. 支出類型 </font>** <br/><font size=3> 將支出類型分為 6 個類別，各類別另有子類別，以利支出分析。</font>
 
@@ -51,6 +52,9 @@ collection: portfolio
 &nbsp;&nbsp;&nbsp;&nbsp; ・使用 XLOOKUP 函數自動顯示各列之類別<br/> </font>
 
 ### <font color='blue'> 3. 資料視覺化與分析 </font>
-<iframe width="800" height="500" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=364B55E5FBC9CC6E%216162&authkey=%21AHYRz-NmI_M8ByM&em=2&ActiveCell='D2'!A1&Item=dashboard2&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+<img src='/images/P2_02.png' width='130%' height='130%'>
+<img src='/images/P2_03.png' width='130%' height='130%'>
+
+<iframe width="1000" height="520" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=364B55E5FBC9CC6E%216162&authkey=%21AHYRz-NmI_M8ByM&em=2&ActiveCell='D2'!A1&Item=dashboard2&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 
 ### <font color='blue'> 4. 結論 </font>
