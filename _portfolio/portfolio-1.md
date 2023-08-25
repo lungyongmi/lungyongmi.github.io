@@ -27,7 +27,7 @@ collection: portfolio
 
 **<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">here.</a></b>
 
-**<font size=3> Reading and Exploring Data </font>**<br/> 
+### <font color='blue'> 1. Reading and Exploring Data </font>
 **<font size=3> a. Import Libraries </font>**
 ```python
 # Import Libraries for Dataframe and Visualization
