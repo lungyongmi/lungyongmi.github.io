@@ -23,7 +23,7 @@ collection: portfolio
 ### <font color='blue'> 1. 記帳表單設計 </font>
 **<font size=3> 共設計 4 種工作表，分為每月紀錄、支出類型、年度預算與個人資產。 </font>**
 
-<!-- **<font size=3> a. 每月紀錄 </font>**
+**<font size=3> a. 每月紀錄 </font>**
 <font size=3> 以月為單位，紀錄每筆財務明細，結構與設計如下：<br/>
 1. 月總整理：包含收入、支出與存款<br/>
 2. 年度預算：使用 SPARKLINE 函數，製作各類別已支出金額占預算之進度條<br/>
@@ -48,4 +48,4 @@ collection: portfolio
 
 ### <font color='blue'> 2. 資料清理 </font>
 ### <font color='blue'> 3. 資料視覺化與分析 </font>
-### <font color='blue'> 4. 結論 </font> -->
+### <font color='blue'> 4. 結論 </font>
