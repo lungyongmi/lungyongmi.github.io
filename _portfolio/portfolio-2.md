@@ -23,8 +23,9 @@ collection: portfolio
 ### <font color='blue'> 1. 記帳表單設計 </font>
 **<font size=3> 共設計 4 種工作表，分為每月紀錄、支出類型、年度預算與個人資產。 </font>**
 
-**<font size=3> a. 每月紀錄</font>** <br/> &nbsp;&nbsp;&nbsp;&nbsp;以月為單位，紀錄每筆財務明細，結構與設計如下：<br/>
+**<font size=3> a. 每月紀錄</font>**
 <img src='/images/P2_01.png'>
+<font size=3> 以月為單位，紀錄每筆財務明細，結構與設計如下：<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➊ 月總整理：包含收入、支出與存款<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➋ 年度預算：使用 SPARKLINE 函數，製作各類別已支出金額占預算之進度條<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➌ 無支出日：使用 SQUENCE 函數和條件式格式設，製作行事曆<br/>
@@ -35,8 +36,6 @@ collection: portfolio
 &nbsp;&nbsp;&nbsp;&nbsp; ➑ 固定支出明細：列出月繳之固定支出明細<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➒ 支出明細：紀錄所有支出明細，包含日期、內容、金額、子類別、類別與方式<br/> </font>
 
-<img src='/images/P2_01.png'>
-
 **<font size=3> b. 支出類型 </font>** <br/><font size=3> 將支出類型分為 6 個類別，各類別另有子類別，以利支出分析。</font>
 
 **<font size=3> c. 年度預算 </font>** <br/><font size=3> 於年初訂定今年度預算，此工作表用於統整每月支出，追蹤各類別預算與年度預算。<br/></font>
@@ -44,5 +43,10 @@ collection: portfolio
 **<font size=3> d. 資產總表 </font>** <br/><font size=3> 定期更新各帳戶金額，用以控管個人財務狀況。<br/></font>
 
 ### <font color='blue'> 2. 資料清理 </font>
+<font size=3>
+・彙整各月支出明細<br/>
+・調整並確認各欄資料之格式<br/>
+・使用 XLOOKUP 函數自動顯示各列之類別<br/> </font>
+
 ### <font color='blue'> 3. 資料視覺化與分析 </font>
 ### <font color='blue'> 4. 結論 </font>
