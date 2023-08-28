@@ -52,8 +52,7 @@ collection: portfolio
 &nbsp;&nbsp;&nbsp;&nbsp; ・使用 XLOOKUP 函數自動顯示各列之類別<br/> </font>
 
 ### <font color='blue'> 3. 資料視覺化與分析 </font>
-<img src='/images/P2_02.png' width='130%' height='130%'>
-<img src='/images/P2_03.png' width='130%' height='130%'>
+<img src='/images/P2.gif' width='130%' height='130%'>
 
 <div id="myExcelDiv" style="width: 930px; height: 580px"><script type="text/javascript" src="https://onedrive.live.com/embed?resid=364B55E5FBC9CC6E%216172&authkey=%21AOT0gM0HBn9ohL8&em=3&wdItem=%22dashboard2%22&wdDivId=%22myExcelDiv%22&wdDownloadButton=1&wdHideGridlines=1&wdActiveCell=%22'D2'!A1%22"></script>
 
