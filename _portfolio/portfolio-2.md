@@ -40,7 +40,8 @@ collection: portfolio
 <br/>
 **<font size=3> b. 支出類型 </font>** <br/><font size=3> 將支出類型分為 6 個類別，各類別另有子類別，以利支出分析。</font>
 
-**<font size=3> c. 年度預算 </font>** <br/><font size=3> 於年初訂定今年度預算，此工作表用於統整每月支出，追蹤各類別預算與年度預算。<br/></font>
+**<font size=3> c. 年度預算 </font>** <br/><font size=3> 於年初訂定今年度預算，此工作表用於統整每月支出，追蹤各類別預算與年度預算。</font>
+<br/>
 <img src='/images/P2_02.png'>
 
 **<font size=3> d. 資產總表 </font>** <br/><font size=3> 定期更新各帳戶金額，用以控管個人財務狀況。<br/></font>
@@ -56,9 +57,8 @@ collection: portfolio
 <br/>
 <font size=3>
 藉由記帳表單與 Personal Finance Dashboard，成功控管總支出金額，符合年度預算。<br/>
-<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ・記帳表單設計之「年度預算進度條」有助於警惕各類別的支出狀況<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ・「娛樂」和「購物」類別的支出金額已接近預算上限
+&nbsp;&nbsp;&nbsp;&nbsp; ・「娛樂」和「購物」類別的支出金額已接近預算上限<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ・總支出金額較去年同期減少近 10,000 元<br/>
 
 
