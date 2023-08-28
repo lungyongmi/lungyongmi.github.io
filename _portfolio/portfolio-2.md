@@ -23,8 +23,6 @@ collection: portfolio
 **<font size=3> 共設計 4 種工作表，分為每月紀錄、支出類型、年度預算與個人資產。 </font>**
 
 **<font size=3> a. 每月紀錄</font>**
-<br/>
-
 <img src='/images/P2_01.png' width='130%' height='130%'>
 <font size=3> 以月為單位，紀錄每筆財務明細，結構與設計如下：<br/>
 <br/>
