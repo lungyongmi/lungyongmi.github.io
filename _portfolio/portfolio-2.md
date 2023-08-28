@@ -27,7 +27,7 @@ collection: portfolio
 <br/>
 
 <img src='/images/P2_01.png' width='130%' height='130%'>
-<font size=3> 以月為單位，紀錄每筆財務明細，結構與設計如下：
+<font size=3> 以月為單位，紀錄每筆財務明細，結構與設計如下：<br/>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➊ 月總整理：包含收入、支出與存款<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➋ 年度預算：使用 SPARKLINE 函數，製作各類別已支出金額占預算之進度條<br/>
@@ -38,7 +38,7 @@ collection: portfolio
 &nbsp;&nbsp;&nbsp;&nbsp; ➐ 每週明細：使用 SUMIFS 函數紀錄每週支出，以及各類別已支出金額占預算之比例<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➑ 固定支出明細：列出月繳之固定支出明細<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➒ 支出明細：紀錄所有支出明細，包含日期、內容、金額、子類別、類別與方式 </font>
-
+<br/>
 **<font size=3> b. 支出類型 </font>** <br/><font size=3> 將支出類型分為 6 個類別，各類別另有子類別，以利支出分析。</font>
 
 **<font size=3> c. 年度預算 </font>** <br/><font size=3> 於年初訂定今年度預算，此工作表用於統整每月支出，追蹤各類別預算與年度預算。<br/></font>
@@ -55,6 +55,6 @@ collection: portfolio
 <img src='/images/P2_02.png' width='130%' height='130%'>
 <img src='/images/P2_03.png' width='130%' height='130%'>
 
-<iframe width="850" height="520" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=364B55E5FBC9CC6E%216162&authkey=%21AHYRz-NmI_M8ByM&em=2&ActiveCell='D2'!A1&Item=dashboard2&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+<iframe width="900" height="520" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=364B55E5FBC9CC6E%216166&authkey=%21AC22dExhGHW6o58&em=2&ActiveCell='D2'!A1&Item=dashboard2&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 
 ### <font color='blue'> 4. 結論 </font>
