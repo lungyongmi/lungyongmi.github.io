@@ -55,6 +55,6 @@ collection: portfolio
 <img src='/images/P2_02.png' width='130%' height='130%'>
 <img src='/images/P2_03.png' width='130%' height='130%'>
 
-<div id="myExcelDiv" style="width: 950px; height: 540px"></div><script type="text/javascript" src="https://onedrive.live.com/embed?resid=364B55E5FBC9CC6E%216172&authkey=%21AOT0gM0HBn9ohL8&em=3&wdItem=%22dashboard2%22&wdDivId=%22myExcelDiv%22&wdDownloadButton=1&wdHideGridlines=1&wdActiveCell=%22'D2'!A1%22"></script>
+<div id="myExcelDiv" style="width: 950px; height: 540px"><script type="text/javascript" src="https://onedrive.live.com/embed?resid=364B55E5FBC9CC6E%216172&authkey=%21AOT0gM0HBn9ohL8&em=3&wdItem=%22dashboard2%22&wdDivId=%22myExcelDiv%22&wdDownloadButton=1&wdHideGridlines=1&wdActiveCell=%22'D2'!A1%22"></script>
 
 ### <font color='blue'> 4. 結論 </font>
