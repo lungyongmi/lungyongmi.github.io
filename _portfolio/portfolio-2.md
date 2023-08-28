@@ -17,7 +17,7 @@ collection: portfolio
    1. 記帳表單設計<br/>
    2. 資料清理<br/>
    3. 資料視覺化與分析<br/>
-   4. 結論
+   4. 總結
 </font><br/>
 
 ### <font color='blue'> 1. 記帳表單設計 </font>
@@ -53,7 +53,6 @@ collection: portfolio
 
 ### <font color='blue'> 3. 資料視覺化與分析 </font>
 <img src='/images/P2.gif' width='130%' height='130%'>
+<br/>
 
-<div id="myExcelDiv" style="width: 930px; height: 580px"><script type="text/javascript" src="https://onedrive.live.com/embed?resid=364B55E5FBC9CC6E%216172&authkey=%21AOT0gM0HBn9ohL8&em=3&wdItem=%22dashboard2%22&wdDivId=%22myExcelDiv%22&wdDownloadButton=1&wdHideGridlines=1&wdActiveCell=%22'D2'!A1%22"></script>
-
-### <font color='blue'> 4. 結論 </font>
+### <font color='blue'> 4. 總結 </font>
