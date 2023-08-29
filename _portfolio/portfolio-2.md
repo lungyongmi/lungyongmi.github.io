@@ -17,6 +17,7 @@ collection: portfolio
    1. 記帳表單設計<br/>
    2. 資料清理<br/>
    3. 資料視覺化與分析<br/>
+   4. 總結
 </font><br/>
 
 ### <font color='blue'> 1. 記帳表單設計 </font>
@@ -58,7 +59,7 @@ collection: portfolio
 
 ### <font color='blue'> 4. 總結 </font>
 <font size=3>
-藉由記帳表單與 Personal Finance Dashboard，成功控管總支出金額，符合年度預算。<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;藉由記帳表單與 Personal Finance Dashboard，成功控管總支出金額，符合年度預算。<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ・記帳表單設計之「年度預算進度條」有助於警惕各類別的支出狀況<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ・「娛樂」和「購物」類別的支出金額已接近預算上限，需謹慎控制所剩的可支出金額<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ・總支出金額較去年同期減少近 10,000 元，有效約束支出金額，符合預算<br/>
