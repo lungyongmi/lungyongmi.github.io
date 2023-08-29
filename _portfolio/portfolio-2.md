@@ -21,7 +21,7 @@ collection: portfolio
 </font><br/>
 
 ### <font color='blue'> 1. 記帳表單設計 </font>
-**<font size=3> 共設計 4 種工作表，分為 a.每月紀錄、b.支出類型、c.年度預算與 d.個人資產。 </font>**
+**<font size=3> 共設計 4 種工作表，分為 a. 每月紀錄、b. 支出類型、c. 年度預算與 d. 個人資產。 </font>**
 
 **<font size=3> a. 每月紀錄</font>**
 <img src='/images/P2_01.png' width='130%' height='130%'>
