@@ -1,5 +1,5 @@
 ---
-title: "PROJECT 3: Personal Finance Dashboard"
+title: "Project 3 | Personal Finance Dashboard"
 #excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
