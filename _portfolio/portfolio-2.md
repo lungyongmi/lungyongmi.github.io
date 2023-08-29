@@ -20,7 +20,7 @@ collection: portfolio
 </font><br/>
 
 ### <font color='blue'> 1. 記帳表單設計 </font>
-**<font size=3> 共設計 4 種工作表，分為每月紀錄、支出類型、年度預算與個人資產。 </font>**
+**<font size=3> 共設計 4 種工作表，分為 a.每月紀錄、b.支出類型、c.年度預算與 d.個人資產。 </font>**
 
 **<font size=3> a. 每月紀錄</font>**
 <img src='/images/P2_01.png' width='130%' height='130%'>
@@ -42,21 +42,25 @@ collection: portfolio
 <br/>
 <img src='/images/P2_02.png'>
 
-**<font size=3> d. 資產總表 </font>** <br/><font size=3> 定期更新各帳戶金額，用以控管個人財務狀況。<br/></font>
+**<font size=3> d. 個人資產 </font>** <br/><font size=3> 定期更新各帳戶金額，用以控管個人財務狀況。<br/></font>
 
 ### <font color='blue'> 2. 資料清理 </font>
 <font size=3>
 &nbsp;&nbsp;&nbsp;&nbsp; ・彙整各月支出明細<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ・調整並確認各欄資料之格式<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ・使用 XLOOKUP 函數自動顯示各列子類別所屬類別<br/> </font>
+&nbsp;&nbsp;&nbsp;&nbsp; ・使用 XLOOKUP 函數自動顯示各列子類別所屬類別<br/> 
+&nbsp;&nbsp;&nbsp;&nbsp; ・建立樞紐分析表與圖表<br/> 
+</font>
 
-### <font color='blue'> 3. 資料視覺化與分析 </font>
+### <font color='blue'> 3. 資料視覺化 </font>
 <img src='/images/P2.gif' width='130%' height='130%'>
 <br/>
+
+### <font color='blue'> 4. 總結 </font>
 <font size=3>
 藉由記帳表單與 Personal Finance Dashboard，成功控管總支出金額，符合年度預算。<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ・記帳表單設計之「年度預算進度條」有助於警惕各類別的支出狀況<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ・「娛樂」和「購物」類別的支出金額已接近預算上限<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ・總支出金額較去年同期減少近 10,000 元<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; ・「娛樂」和「購物」類別的支出金額已接近預算上限，需謹慎控制所剩的可支出金額<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; ・總支出金額較去年同期減少近 10,000 元，有效約束支出金額，符合預算<br/>
 
 
