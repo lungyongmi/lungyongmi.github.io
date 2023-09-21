@@ -27,7 +27,7 @@ collection: portfolio
 
 ### <font color='blue'> 1. Reading and Exploring Data </font>
 **<font size=3> a. Import Data </font>**
-```sql
+```
 -- Create Tables and Import Data
 DROP TABLE IF EXISTS applestore;
 CREATE TABLE applestore(
