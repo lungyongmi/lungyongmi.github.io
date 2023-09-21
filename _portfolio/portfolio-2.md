@@ -26,7 +26,6 @@ collection: portfolio
 
 ### <font color='blue'> 1. Import Data 🔗 <a href="">Full Code</a> </font>
 **<font size=3> a. Create Tables and Import Data 🔗 </font>**
-<font size=3> 
 
 ```sql
 -- Create Tables and Import Data
@@ -58,7 +57,6 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 ```
-</font>
 
 ### <font color='blue'> 2. Reading and Exploring Data 🔗 <a href="">Full Code</a> </font>
 **<font size=3> a. Explore Data </font>**
@@ -67,7 +65,7 @@ IGNORE 1 ROWS;
 SELECT *
 FROM applestore;
 ```
-<img src='/images/P2_01.png' width='90%' height='90%'>
+<img src='/images/P2_01.png' width='100%' height='100%'>
 <br/>
 
 **<font size=3> b. Number of Apps by Genre </font>**
@@ -78,7 +76,7 @@ FROM applestore
 GROUP BY Genre
 ORDER BY Num DESC;
 ```
-<img src='/images/P2_02.png' width='90%' height='90%'>
+<img src='/images/P2_02.png' width='100%' height='100%'>
 <br/>
 
 **<font size=3> c. Average of App Ratings and Paid App Price </font>**
@@ -88,7 +86,7 @@ SELECT ROUND(AVG(user_rating), 1) AS AvgRating,
        ROUND((SELECT AVG(price) FROM applestore WHERE price > 0), 1) AS AvgPrice
 FROM applestore;
 ```
-<img src='/images/P2_03.png' width='90%' height='90%'>
+<img src='/images/P2_03.png' width='100%' height='100%'>
 <br/>
 
 ### <font color='blue'> 3. Exploratory Data Analysis (EDA) 🔗 <a href="">Full Code</a> </font>
@@ -103,7 +101,7 @@ SELECT CASE
 FROM applestore
 GROUP BY AppType;
 ```
-<img src='/images/P2_04.png' width='90%' height='90%'>
+<img src='/images/P2_04.png' width='100%' height='100%'>
 <br/>
 
 **<font size=3> b. Check if Apps with more Supporting Languages have Higher Rating </font>**
@@ -119,7 +117,7 @@ FROM applestore
 GROUP BY lang_type
 ORDER BY AvgRating DESC;
 ```
-<img src='/images/P2_05.png' width='90%' height='90%'>
+<img src='/images/P2_05.png' width='100%' height='100%'>
 <br/>
 
 **<font size=3> c. Check Correlation Between App Screenshot and Rating </font>**
@@ -134,7 +132,7 @@ SELECT CASE
 FROM AvgRating
 GROUP BY ScrnType;
 ```
-<img src='/images/P2_06.png' width='90%' height='90%'>
+<img src='/images/P2_06.png' width='100%' height='100%'>
 <br/>
 
 **<font size=3> d. Top Rating App in Each Genre </font>**
@@ -155,12 +153,13 @@ FROM top_app
 WHERE tot_r = 1
 ORDER BY rating_count_tot DESC;
 ```
-<img src='/images/P2_07.png' width='90%' height='90%'>
+<img src='/images/P2_07.png' width='100%' height='100%'>
 <br/>
 
 ### <font color='blue'> 4. Insight </font>
 
-* <font size=3>The new app should set goal for an average rating above 3.8. </font><br/>
-* <font size=3>Paid Apps have better ratings, and the average rating is 4.0. </font><br/>
-* <font size=3>Games genre has the highest competition, on the other hand the average ratings in Food and ?? genre are low. </font><br/>
-* <font size=3>Apps with 4-5 screenshots showed for display and  10-30 languages supporting have better ratings. </font>
+<font size=3>
+・The new app should set goal for an average rating above 3.8. <br/>
+・Paid Apps have better ratings, and the average rating is 4.0. <br/>
+・Games genre has the highest competition, on the other hand the average ratings in Food and ?? genre are low.\<br/>
+・Apps with 4-5 screenshots showed for display and  10-30 languages supporting have better ratings. </font>
