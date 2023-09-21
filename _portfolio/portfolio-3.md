@@ -1,6 +1,5 @@
 ---
 title: "Project 3：Personal Finance Dashboard"
-#excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
@@ -24,7 +23,7 @@ collection: portfolio
 **<font size=3> 共設計 4 種工作表，分為 a. 每月紀錄、b. 支出類型、c. 年度預算與 d. 個人資產。 </font>**
 
 **<font size=3> a. 每月紀錄</font>**
-<img src='/images/P2_01.png' width='130%' height='130%'>
+<img src='/images/P3_01.png' width='130%' height='130%'>
 <font size=3> 以月為單位，紀錄每筆財務明細，結構與設計如下：<br/>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ➊ 月總整理：包含當月總收入、支出與存款<br/>
@@ -41,7 +40,7 @@ collection: portfolio
 
 **<font size=3> c. 年度預算 </font>** <br/><font size=3> 於年初訂定今年度預算，此工作表用於統整每月支出，追蹤各類別預算與年度預算。</font>
 <br/>
-<img src='/images/P2_02.png'>
+<img src='/images/P3_02.png'>
 
 **<font size=3> d. 個人資產 </font>** <br/><font size=3> 定期更新各帳戶金額，用以控管個人財務狀況。<br/></font>
 
@@ -54,7 +53,7 @@ collection: portfolio
 </font>
 
 ### <font color='blue'> 3. 資料視覺化 </font>
-<img src='/images/P2.gif' width='130%' height='130%'>
+<img src='/images/P3.gif' width='130%' height='130%'>
 <br/>
 
 ### <font color='blue'> 4. 總結 </font>

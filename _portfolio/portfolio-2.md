@@ -22,32 +22,34 @@ collection: portfolio
    5. Insights<br/>
 </font><br/>
 
-### <font color='blue'> 1. Import Data 🔗 <a href="">Full Code</a> </font>
 **<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">here.</a></b>
 
+### <font color='blue'> 1. Import Data 🔗 <a href="">Full Code</a> </font>
 **<font size=3> a. Create Tables and Import Data 🔗 </font>**
 
+<font size3>
 ```sql
 -- Create Tables and Import Data
 DROP TABLE IF EXISTS applestore;
 CREATE TABLE applestore(
-		id INT NOT NULL PRIMARY KEY,
-		track_name VARCHAR(255),
-		size_bytes BIGINT,
-		currency VARCHAR(255),
-		price DECIMAL,
-		rating_count_tot INT,
-		rating_count_ver INT,
-		user_rating DECIMAL,
-		user_rating_ver DECIMAL,
-		ver VARCHAR(255),
-		cont_rating VARCHAR(255),
-		prime_genre VARCHAR(255),
-		sup_devices_num INT,
-		ipadSc_urls_num INT,
-		lang_num INT,
-		vpp_lic INT
+    id INT NOT NULL PRIMARY KEY,
+    track_name VARCHAR(255),
+    size_bytes BIGINT,
+    currency VARCHAR(255),
+    price DECIMAL,
+    rating_count_tot INT,
+    rating_count_ver INT,
+    user_rating DECIMAL,
+    user_rating_ver DECIMAL,
+    ver VARCHAR(255),
+    cont_rating VARCHAR(255),
+    prime_genre VARCHAR(255),
+    sup_devices_num INT,
+    ipadSc_urls_num INT,
+    lang_num INT,
+    vpp_lic INT
 );
+<font>
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/applestore.csv'
 INTO TABLE applestore
@@ -140,14 +142,14 @@ GROUP BY ScrnType;
 -- Check if Apps with more supporting languages have higher rating
 WITH top_app AS(
 SELECT prime_genre,
-		   track_name,
+	   track_name,
        user_rating,
        rating_count_tot,
-		   RANK() OVER(PARTITION BY prime_genre ORDER BY user_rating DESC, rating_count_tot DESC) AS tot_r
+	   RANK() OVER(PARTITION BY prime_genre ORDER BY user_rating DESC, rating_count_tot DESC) AS tot_r
 FROM applestore)
 
 SELECT prime_genre AS Genre,
-		   track_name AS App,
+	   track_name AS App,
        user_rating AS Rating
 FROM top_app
 WHERE tot_r = 1
@@ -158,7 +160,7 @@ ORDER BY rating_count_tot DESC;
 
 ### <font color='blue'> 4. Insight </font>
 
-* <font size=3>- The new app should set goal for an average rating above 3.8. <br/>
-* Paid Apps have better ratings, and the average rating is 4.0. <br/>
-* Games genre has the highest competition, on the other hand the average ratings in Food and ?? genre are low. <br/>
-* Apps with 4-5 screenshots showed for display and  10-30 languages supporting have better ratings. <br/></font>
+* <font size=3>The new app should set goal for an average rating above 3.8. </font><br/>
+* <font size=3>Paid Apps have better ratings, and the average rating is 4.0. </font><br/>
+* <font size=3>Games genre has the highest competition, on the other hand the average ratings in Food and ?? genre are low. </font><br/>
+* <font size=3>Apps with 4-5 screenshots showed for display and  10-30 languages supporting have better ratings. </font>
