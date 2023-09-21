@@ -26,6 +26,7 @@ collection: portfolio
 
 ### <font color='blue'> 1. Import Data 🔗 <a href="">Full Code</a> </font>
 **<font size=3> a. Create Tables and Import Data 🔗 </font>**
+<font size=3> 
 
 ```sql
 -- Create Tables and Import Data
@@ -57,6 +58,7 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 ```
+</font>
 
 ### <font color='blue'> 2. Reading and Exploring Data 🔗 <a href="">Full Code</a> </font>
 **<font size=3> a. Explore Data </font>**
