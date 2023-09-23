@@ -1,6 +1,5 @@
 ---
 title: "Project 1：Segment Customers with RFM and K-Means"
-#excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
@@ -18,7 +17,7 @@ collection: portfolio
 ### Analysis Process:
 <font size=3> 
    1. Reading and Exploring Data<br/>
-   2. Data Cleaning<br/>
+   2. Data Cleansing<br/>
    3. Calculating RFM Metrics<br/>
    4. Data Preprocessing<br/>
    5. K-Means Clustering<br/>
@@ -55,7 +54,7 @@ df.head()
 <img src='/images/P1_01.png' width='90%' height='90%'>
 <br/>
 
-### <font color='blue'> 2. Data Cleaning </font>
+### <font color='blue'> 2. Data Cleansing </font>
 **<font size=3> a. Check and Drop Missing Values and Duplicates </font>**<br/>
 **<font size=3> b. Check and Change Data Types </font>**<br/> <font size=3> The data type of ‘CustomerID’ should be object type. </font>  
 ```python
