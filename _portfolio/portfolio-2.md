@@ -140,10 +140,10 @@ GROUP BY ScrnType;
 -- Top Rating App in Each Genre
 WITH top_app AS(
 SELECT prime_genre,
-	track_name,
+       track_name,
        user_rating,
        rating_count_tot,
-	RANK() OVER(PARTITION BY prime_genre ORDER BY user_rating DESC, rating_count_tot DESC) AS tot_r
+       RANK() OVER(PARTITION BY prime_genre ORDER BY user_rating DESC, rating_count_tot DESC) AS tot_r
 FROM applestore)
 
 SELECT prime_genre AS Genre,
@@ -161,6 +161,6 @@ ORDER BY rating_count_tot DESC;
 <font size=3>
 ・The new app should set goal for an average rating above 3.8. <br/>
 ・Paid Apps have better ratings, and the average rating is 4.0. <br/>
-・Games and Entertainment genre have high competition.
+・Games and Entertainment genre have high competition. <br/>
 ・The average ratings in Catelog, Medical and Navigation genre are very low.<br/>
 ・Apps with 4-5 screenshots showed for display and 10-30 languages supporting have better ratings. </font>
