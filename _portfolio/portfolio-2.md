@@ -95,10 +95,10 @@ FROM applestore;
 -- Check whether paid apps have higher ratings than free apps
 SELECT 
        CASE
-          WHEN price > 0 THEN 'Paid'
+	   WHEN price > 0 THEN 'Paid'
 	   ELSE 'Free'
 	END AS AppType,
-       ROUND(AVG(user_rating), 1) AS Rating
+        ROUND(AVG(user_rating), 1) AS Rating
 FROM applestore
 GROUP BY AppType;
 ```
@@ -114,7 +114,7 @@ SELECT
 	   WHEN lang_num BETWEEN 10 AND 30 THEN '10-30 languages'
 	   ELSE '>30 languages'
 	END AS lang_type,
-       ROUND(AVG(user_rating), 1) AS AvgRating
+        ROUND(AVG(user_rating), 1) AS AvgRating
 FROM applestore
 GROUP BY lang_type
 ORDER BY AvgRating DESC;
@@ -128,10 +128,10 @@ ORDER BY AvgRating DESC;
 SELECT 
        CASE
 	   WHEN ipadSc_urls_num < 1 THEN 'No Screenshot'
-          WHEN ipadSc_urls_num BETWEEN 1 AND 3 THEN '1-3 Screenshot'
-          ELSE '4-5 Screenshot'
+	   WHEN ipadSc_urls_num BETWEEN 1 AND 3 THEN '1-3 Screenshot'
+	   ELSE '4-5 Screenshot'
 	END AS ScrnType,
-       ROUND(AVG(user_rating), 1) AS AvgRating
+        ROUND(AVG(user_rating), 1) AS AvgRating
 FROM AvgRating
 GROUP BY ScrnType;
 ```
