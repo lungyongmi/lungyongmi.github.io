@@ -93,7 +93,8 @@ FROM applestore;
 **<font size=3> a. Check whether paid apps have higher ratings than free apps </font>**
 ```sql
 -- Check whether paid apps have higher ratings than free apps
-SELECT CASE
+SELECT 
+       CASE
           WHEN price > 0 THEN 'Paid'
 	   ELSE 'Free'
 	END AS AppType,
@@ -107,7 +108,8 @@ GROUP BY AppType;
 **<font size=3> b. Check if apps with more supporting languages have higher rating </font>**
 ```sql
 -- Check if apps with more supporting languages have higher rating
-SELECT CASE
+SELECT 
+       CASE
 	   WHEN lang_num < 10 THEN '<10 languages'
 	   WHEN lang_num BETWEEN 10 AND 30 THEN '10-30 languages'
 	   ELSE '>30 languages'
@@ -123,7 +125,8 @@ ORDER BY AvgRating DESC;
 **<font size=3> c. Check Correlation Between App Screenshot and Rating </font>**
 ```sql
 -- Check if Apps with more supporting languages have higher rating
-SELECT CASE
+SELECT 
+       CASE
 	   WHEN ipadSc_urls_num < 1 THEN 'No Screenshot'
           WHEN ipadSc_urls_num BETWEEN 1 AND 3 THEN '1-3 Screenshot'
           ELSE '4-5 Screenshot'
@@ -139,15 +142,17 @@ GROUP BY ScrnType;
 ```sql
 -- Top Rating App in Each Genre
 WITH top_app AS(
-SELECT prime_genre,
+SELECT 
+       prime_genre,
        track_name,
        user_rating,
        rating_count_tot,
        RANK() OVER(PARTITION BY prime_genre ORDER BY user_rating DESC, rating_count_tot DESC) AS tot_r
 FROM applestore)
 
-SELECT prime_genre AS Genre,
-	track_name AS App,
+SELECT 
+       prime_genre AS Genre,
+       track_name AS App,
        user_rating AS Rating
 FROM top_app
 WHERE tot_r = 1
