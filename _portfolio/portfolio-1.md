@@ -24,7 +24,7 @@ collection: portfolio
    6. Conclusion
 </font><br/>
 
-**<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">here.</a></b>
+**<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">here.</a></b>
 
 ### <font color='blue'> 1. Reading and Exploring Data </font>
 **<font size=3> a. Import Libraries </font>**
@@ -68,7 +68,7 @@ df.describe()
 df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 ```
 
-### <font color='blue'> 3. Calculating RFM Metrics  🔗 <a href="">Full Code</a> </font>
+### <font color='blue'> 3. Calculating RFM Metrics  🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
 **<font size=3> a. RFM represents Recency, Frequency and Monetary.<br/> &nbsp;&nbsp;&nbsp;&nbsp; RFM is a model used to segment customers base by their purchasing patterns.</font>**<br/>
 <font size=3> &nbsp;&nbsp;&nbsp;&nbsp; R (Recency) : How long ago since the last purchase of each customer.<br/> &nbsp;&nbsp;&nbsp;&nbsp; F (Frequency) : How often each customer make purchases.<br/> &nbsp;&nbsp;&nbsp;&nbsp; M (Monetary) : Total amount of money each customer spends.</font><br/>
 
@@ -98,7 +98,7 @@ rfm.head()
 <br/>
 
 
-### <font color='blue'> 4. Data Preprocessing  🔗 <a href="">Full Code</a> </font>
+### <font color='blue'> 4. Data Preprocessing  🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
 **<font size=3> a. Detect and Remove Outliers Using the IQR Method </font>**
 
 ```python
@@ -175,7 +175,7 @@ plt.show()
 <img src='/images/P1_05.png' width='75%' height='75%'>
 <br/>
 
-### <font color='blue'> 5. K-Means Clustering  🔗 <a href="">Full Code</a> </font>
+### <font color='blue'> 5. K-Means Clustering  🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
 
 ```python
 # Choose K=3
@@ -240,7 +240,7 @@ plt.show()
 <img src='/images/P1_08.png' width='75%' height='75%'>
 <br/>
 
-### <font color='blue'> 6. Conclusion 🔗 <a href="">Full Code</a> </font>
+### <font color='blue'> 6. Conclusion 🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
 
 * <font size=3>CLUSTER 0 :<br/> 約佔整體的 64%，RFM 平均介於 2-3，多為 potential_loyalists 和 need_attention 之客戶，建議列為目標客戶。</font>
 * <font size=3>CLUSTER 1 :<br/> 約佔整體的 11%，RFM 平均接近 4，多為 champions 客戶，須維持與其之間的良好關係，以及其對於品牌的忠誠度。</font>
