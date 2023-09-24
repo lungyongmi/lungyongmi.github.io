@@ -15,16 +15,15 @@ collection: portfolio
 
 ### Analysis Process:
 <font size=3> 
-   1. Problem Definition<br/>
-   2. Importing Data<br/>
-   3. Reading and Exploring Data<br/>
-   4. Exploratory Data Analysis (EDA) <br/>
-   5. Insights<br/>
+   1. Import Data <br/>
+   2. Read and Explore Data <br/>
+   3. Data Analysis <br/>
+   5. Find Insights <br/>
 </font><br/>
 
-**<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://www.kaggle.com/code/weilung/segment-customers-with-rfm-and-k-means">here.</a></b>
+**<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://github.com/lungyongmi/Analyze_Apps_Using_SQL">here.</a></b>
 
-### <font color='blue'> 1. Import Data 🔗 <a href="">Full Code</a> </font>
+### <font color='blue'> 1. Import Data 🔗 <a href="https://github.com/lungyongmi/Analyze_Apps_Using_SQL/blob/main/Import_Data.sql">Full Code</a> </font>
 **<font size=3> a. Create Tables and Import Data 🔗 </font>**
 
 ```sql
@@ -58,7 +57,7 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 ```
 
-### <font color='blue'> 2. Reading and Exploring Data 🔗 <a href="">Full Code</a> </font>
+### <font color='blue'> 2. Read and Explore Data 🔗 <a href="https://github.com/lungyongmi/Analyze_Apps_Using_SQL/blob/main/Data_Analysis.sql">Full Code</a> </font>
 **<font size=3> a. Explore Data </font>**
 ```sql
 -- Explore Data
@@ -71,7 +70,8 @@ FROM applestore;
 **<font size=3> b. Number of Apps by Genre </font>**
 ```sql
 -- Number of Apps by Genre
-SELECT prime_genre AS Genre, COUNT(*) AS Num
+SELECT prime_genre AS Genre,
+       COUNT(*) AS Num
 FROM applestore
 GROUP BY Genre
 ORDER BY Num DESC;
@@ -89,14 +89,14 @@ FROM applestore;
 <img src='/images/P2_03.png' width='100%' height='100%'>
 <br/>
 
-### <font color='blue'> 3. Exploratory Data Analysis (EDA) 🔗 <a href="">Full Code</a> </font>
+### <font color='blue'> 3. Data Analysis 🔗 <a href="https://github.com/lungyongmi/Analyze_Apps_Using_SQL/blob/main/Data_Analysis.sql">Full Code</a> </font>
 **<font size=3> a. Check whether Paid Apps have Higher Ratings than Free Apps </font>**
 ```sql
 -- Check whether Paid Apps have Higher Ratings than Free Apps
 SELECT CASE
-		  WHEN price > 0 THEN 'Paid'
-	      ELSE 'Free'
-	   END AS AppType,
+          WHEN price > 0 THEN 'Paid'
+	   ELSE 'Free'
+	END AS AppType,
        ROUND(AVG(user_rating), 1) AS Rating
 FROM applestore
 GROUP BY AppType;
@@ -108,10 +108,10 @@ GROUP BY AppType;
 ```sql
 -- Check if Apps with more supporting languages have higher rating
 SELECT CASE
-		 WHEN lang_num < 10 THEN '<10 languages'
-		 WHEN lang_num BETWEEN 10 AND 30 THEN '10-30 languages'
-		 ELSE '>30 languages'
-	   END AS lang_type,
+	   WHEN lang_num < 10 THEN '<10 languages'
+	   WHEN lang_num BETWEEN 10 AND 30 THEN '10-30 languages'
+	   ELSE '>30 languages'
+	END AS lang_type,
        ROUND(AVG(user_rating), 1) AS AvgRating
 FROM applestore
 GROUP BY lang_type
@@ -124,10 +124,10 @@ ORDER BY AvgRating DESC;
 ```sql
 -- Check if Apps with more supporting languages have higher rating
 SELECT CASE
-	     WHEN ipadSc_urls_num < 1 THEN 'No Screenshot'
-         WHEN ipadSc_urls_num BETWEEN 1 AND 3 THEN '1-3 Screenshot'
-         ELSE '4-5 Screenshot'
-	   END AS ScrnType,
+	   WHEN ipadSc_urls_num < 1 THEN 'No Screenshot'
+          WHEN ipadSc_urls_num BETWEEN 1 AND 3 THEN '1-3 Screenshot'
+          ELSE '4-5 Screenshot'
+	END AS ScrnType,
        ROUND(AVG(user_rating), 1) AS AvgRating
 FROM AvgRating
 GROUP BY ScrnType;
@@ -140,14 +140,14 @@ GROUP BY ScrnType;
 -- Check if Apps with more supporting languages have higher rating
 WITH top_app AS(
 SELECT prime_genre,
-	   track_name,
+	track_name,
        user_rating,
        rating_count_tot,
-	   RANK() OVER(PARTITION BY prime_genre ORDER BY user_rating DESC, rating_count_tot DESC) AS tot_r
+	RANK() OVER(PARTITION BY prime_genre ORDER BY user_rating DESC, rating_count_tot DESC) AS tot_r
 FROM applestore)
 
 SELECT prime_genre AS Genre,
-	   track_name AS App,
+	track_name AS App,
        user_rating AS Rating
 FROM top_app
 WHERE tot_r = 1
@@ -156,10 +156,11 @@ ORDER BY rating_count_tot DESC;
 <img src='/images/P2_07.png' width='100%' height='100%'>
 <br/>
 
-### <font color='blue'> 4. Insight </font>
+### <font color='blue'> 4. Finding Insights </font>
 
 <font size=3>
 ・The new app should set goal for an average rating above 3.8. <br/>
 ・Paid Apps have better ratings, and the average rating is 4.0. <br/>
-・Games genre has the highest competition, on the other hand the average ratings in Food and ?? genre are low.\<br/>
-・Apps with 4-5 screenshots showed for display and  10-30 languages supporting have better ratings. </font>
+・Games and Entertainment genre have high competition.
+・The average ratings in Catelog, Medical and Navigation genre are very low.<br/>
+・Apps with 4-5 screenshots showed for display and 10-30 languages supporting have better ratings. </font>
