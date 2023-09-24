@@ -4,7 +4,7 @@ collection: portfolio
 ---
 
 ### Project Goal: <br/>
-<font size=3> Segment customers with RFM and K-Means in order to target customers efficiently<br/>
+<font size=3> Segment customers with RFM and K-Means in order to target customers efficiently. <br/>
 透過 RFM 模型與  KMeans 演算法進行客戶分群，找出目標客戶。<br/> </font>
 
 ### Dataset Overview: <br/>
