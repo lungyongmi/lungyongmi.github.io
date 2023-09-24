@@ -1,5 +1,5 @@
 ---
-title: "Project 2：Analyze App Using SQL"
+title: "Project 2：Analyze Apps Using SQL"
 collection: portfolio
 ---
 
@@ -90,9 +90,9 @@ FROM applestore;
 <br/>
 
 ### <font color='blue'> 3. Data Analysis 🔗 <a href="https://github.com/lungyongmi/Analyze_Apps_Using_SQL/blob/main/Data_Analysis.sql">Full Code</a> </font>
-**<font size=3> a. Check whether Paid Apps have Higher Ratings than Free Apps </font>**
+**<font size=3> a. Check whether paid apps have higher ratings than free apps </font>**
 ```sql
--- Check whether Paid Apps have Higher Ratings than Free Apps
+-- Check whether paid apps have higher ratings than free apps
 SELECT CASE
           WHEN price > 0 THEN 'Paid'
 	   ELSE 'Free'
@@ -104,9 +104,9 @@ GROUP BY AppType;
 <img src='/images/P2_04.png' width='100%' height='100%'>
 <br/>
 
-**<font size=3> b. Check if Apps with more Supporting Languages have Higher Rating </font>**
+**<font size=3> b. Check if apps with more supporting languages have higher rating </font>**
 ```sql
--- Check if Apps with more supporting languages have higher rating
+-- Check if apps with more supporting languages have higher rating
 SELECT CASE
 	   WHEN lang_num < 10 THEN '<10 languages'
 	   WHEN lang_num BETWEEN 10 AND 30 THEN '10-30 languages'
@@ -137,7 +137,7 @@ GROUP BY ScrnType;
 
 **<font size=3> d. Top Rating App in Each Genre </font>**
 ```sql
--- Check if Apps with more supporting languages have higher rating
+-- Top Rating App in Each Genre
 WITH top_app AS(
 SELECT prime_genre,
 	track_name,
