@@ -30,7 +30,7 @@ comments:
   facebook:
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    colorscheme          :  "dark" #"light" (default), 
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "gh-pages" # "master", "gh-pages"
@@ -83,7 +83,7 @@ analytics:
 author:
   name             : "Wei Lung"
   avatar           : "lung_photo.jpg"
-  bio              : "Interesting in Data Analysis"
+  bio              : "Contact Me: +886 912 557 870"
   location         : "Taipei, Taiwan"
   employer         :
   pubmed           : 
