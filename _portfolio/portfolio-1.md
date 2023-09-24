@@ -16,9 +16,9 @@ collection: portfolio
 
 ### Analysis Process:
 <font size=3> 
-   1. Reading and Exploring Data<br/>
+   1. Read and Explore Data<br/>
    2. Data Cleansing<br/>
-   3. Calculating RFM Metrics<br/>
+   3. Calculate RFM Metrics<br/>
    4. Data Preprocessing<br/>
    5. K-Means Clustering<br/>
    6. Conclusion
@@ -26,7 +26,7 @@ collection: portfolio
 
 **<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">here.</a></b>
 
-### <font color='blue'> 1. Reading and Exploring Data </font>
+### <font color='blue'> 1. Read and Explore Data </font>
 **<font size=3> a. Import Libraries </font>**
 ```python
 # Import Libraries for Dataframe and Visualization
@@ -68,7 +68,7 @@ df.describe()
 df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 ```
 
-### <font color='blue'> 3. Calculating RFM Metrics  🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
+### <font color='blue'> 3. Calculate RFM Metrics  🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
 **<font size=3> a. RFM represents Recency, Frequency and Monetary.<br/> &nbsp;&nbsp;&nbsp;&nbsp; RFM is a model used to segment customers base by their purchasing patterns.</font>**<br/>
 <font size=3> &nbsp;&nbsp;&nbsp;&nbsp; R (Recency) : How long ago since the last purchase of each customer.<br/> &nbsp;&nbsp;&nbsp;&nbsp; F (Frequency) : How often each customer make purchases.<br/> &nbsp;&nbsp;&nbsp;&nbsp; M (Monetary) : Total amount of money each customer spends.</font><br/>
 
