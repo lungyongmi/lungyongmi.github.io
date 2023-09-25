@@ -124,7 +124,7 @@ ORDER BY AvgRating DESC;
 
 **<font size=3> c. Check Correlation Between App Screenshot and Rating </font>**
 ```sql
--- Check if Apps with more supporting languages have higher rating
+-- Check if apps with more supporting languages have higher rating
 SELECT 
        CASE
 	   WHEN ipadSc_urls_num < 1 THEN 'No Screenshot'
@@ -165,7 +165,7 @@ ORDER BY rating_count_tot DESC;
 
 <font size=3>
 ・The new app should set goal for an average rating above 3.8. <br/>
-・Paid Apps have better ratings, and the average rating is 4.0. <br/>
+・Paid Apps have better ratings, and the average price is 4.0. <br/>
 ・Games and Entertainment genre have high competition. <br/>
 ・The average ratings in Catelog, Medical and Navigation genre are very low.<br/>
-・Apps with 4-5 screenshots showed for display and 10-30 languages supporting have better ratings. </font>
+・Apps with 4-5 screenshots showed for display and 10-30 supporting languages have better ratings. </font>
