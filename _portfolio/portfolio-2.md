@@ -122,7 +122,7 @@ ORDER BY AvgRating DESC;
 <img src='/images/P2_05.png' width='100%' height='100%'>
 <br/>
 
-**<font size=3> c. Check Correlation Between App Screenshot and Rating </font>**
+**<font size=3> c. Check correlation between app screenshot and rating </font>**
 ```sql
 -- Check if apps with more supporting languages have higher rating
 SELECT 
