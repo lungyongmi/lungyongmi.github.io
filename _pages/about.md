@@ -1,6 +1,6 @@
 ---
 permalink: /
-title:
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-### ABOUT: <br/>
+### ABOUT <br/>
 <font size=3>
 具備 5 年專案管理經驗，範疇橫跨大型國際論壇、跨界合作活動、展覽等各類型專案，透過組織規劃人力、預算、時程等細節，以及專案執行的經驗，培養掌握使用者需求和與多方溝通合作的技巧。<br/>
 <br/>
