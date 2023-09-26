@@ -30,7 +30,7 @@ collection: portfolio
 03 size_bytes: size in bytes <br/>
 05 price： Price amount <br/>
 06 rating_count_tot: user rating counts (for all version) <br/>
-08 user_rating: average user rating value (for all version)
+08 user_rating: average user rating value (for all version) <br/>
 12 prime_genre: primary Genre <br/>
 13 sup_devices.num: number of supporting devices <br/>
 14 ipadSc_urls.num: number of screenshots showed for display <br/>
