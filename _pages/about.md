@@ -14,4 +14,4 @@ redirect_from:
 <br/>
 因專案所需時常接觸資料清理與成效分析，漸漸發現自己對於數據領域的興趣，透過 Excel 建立資料追蹤系統、視覺化數據等技能協助組織取得更好的成效與資源。過去半年，自學 SQL、Python 與 PowerBI 等工具，希望能結合過往專案管理之經驗與數據分析的能力，協助組織解決問題、擬定策略。</font>
 <br/>
-<img src='/images/timeline.jpg' width='100%' height='100%'>
+<img src='/images/timeline.jpg' width='120%' height='120%'>
