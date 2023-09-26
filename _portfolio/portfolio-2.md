@@ -71,9 +71,7 @@ IGNORE 1 ROWS;
 ```
 
 ### <font color='blue'> 2. Read and Explore Data 🔗 <a href="https://github.com/lungyongmi/Analyze_Apps_Using_SQL/blob/main/Data_Analysis.sql">Full Code</a> </font>
-**<font size=3> a. Explore Data </font>**
-<font size=3> 7197 rows and 16 columns </font>
-
+**<font size=3> a. Explore Data </font>**<font size=3> There are 7197 rows and 16 columns. </font>
 ```sql
 -- Explore Data
 SELECT *

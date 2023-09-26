@@ -20,7 +20,7 @@ collection: portfolio
 </font><br/>
 
 ### <font color='blue'> 1. 記帳表單設計 </font>
-**<font size=3> 共設計 4 種工作表，分為 a. 每月紀錄、b. 支出類型、c. 年度預算與 d. 個人資產。 </font>**
+<font size=3> 共設計 4 種工作表，分為 a. 每月紀錄、b. 支出類型、c. 年度預算與 d. 個人資產。 </font>
 
 **<font size=3> a. 每月紀錄</font>**
 <img src='/images/P3_01.png' width='130%' height='130%'>
@@ -53,14 +53,21 @@ collection: portfolio
 </font>
 
 ### <font color='blue'> 3. 資料視覺化 </font>
+<font size=3> 使用 Excel 製作 Personal Finance Dashboard，分為 Overview 與 Monthly：
+Overview：
+&nbsp;&nbsp;&nbsp;&nbsp; ・Total Expenses<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; ・Expenses by Month<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; ・Expenses by Category<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; ・TOP 5 Expenses<br/>
+<br/>
+Monthly:
+&nbsp;&nbsp;&nbsp;&nbsp; ・Monthly Expenses by Category <br/>
+&nbsp;&nbsp;&nbsp;&nbsp; ・Top 3 Sub-category by Category<br/>
+&nbsp;&nbsp;&nbsp;&nbsp; ・Monthly Overview<br/></font>
 <img src='/images/P3.gif' width='130%' height='130%'>
 <br/>
 
 ### <font color='blue'> 4. 總結 </font>
 <font size=3>
-&nbsp;&nbsp;&nbsp;&nbsp;藉由記帳表單與 Personal Finance Dashboard，成功控管總支出金額，符合年度預算。<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ・記帳表單設計之「年度預算進度條」有助於警惕各類別的支出狀況<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ・「娛樂」和「購物」類別的支出金額已接近預算上限，需謹慎控制所剩的可支出金額<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ・總支出金額較去年同期減少近 10,000 元，有效約束支出金額，符合預算<br/>
-
-
+記帳表單之設計，達成規律記帳與定期檢視財務狀況的習慣，成功控管年度預算，使得總支出金額較去年同期減少近 10,000 元。 <br/>
+Personal Finance Dashboard 則有助於階段性檢核整體與各類別支出狀況。 </font>
