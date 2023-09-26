@@ -55,13 +55,13 @@ collection: portfolio
 ### <font color='blue'> 3. 資料視覺化 </font>
 <font size=3> 使用 Excel 製作 Personal Finance Dashboard，分為 Overview 與 Monthly：</font>
 
-**<font size=3> Overview: </font>**<font size=3>・Total Expenses<br/>
+**<font size=3> Overview: </font>**<br/><font size=3>・Total Expenses<br/>
 ・Expenses by Month<br/>
 ・Expenses by Category<br/>
 ・TOP 5 Expenses</font>
 <br/>
 
-**<font size=3> Monthly: </font>**<font size=3> ・Monthly Expenses by Category <br/>
+**<font size=3> Monthly: </font>**<br/><font size=3> ・Monthly Expenses by Category <br/>
 ・Top 3 Sub-category by Category<br/>
 ・Monthly Overview<br/></font>
 <br/>
