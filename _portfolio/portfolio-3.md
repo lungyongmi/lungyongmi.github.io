@@ -21,6 +21,7 @@ collection: portfolio
 
 ### <font color='blue'> 1. 記帳表單設計 </font>
 <font size=3> 共設計 4 種工作表，分為 a. 每月紀錄、b. 支出類型、c. 年度預算與 d. 個人資產。 </font>
+<br/>
 
 **<font size=3> a. 每月紀錄</font>**
 <img src='/images/P3_01.png' width='130%' height='130%'>
@@ -53,7 +54,7 @@ collection: portfolio
 </font>
 
 ### <font color='blue'> 3. 資料視覺化 </font>
-<font size=3> 使用 Excel 製作 Personal Finance Dashboard，分為 Overview 與 Monthly：<br/>
+<font size=3> 使用 Excel 製作 Personal Finance Dashboard，分為 Overview 與 Monthly：</font><br/>
 
 **<font size=3> Overview: </font>** <br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ・Total Expenses<br/>
@@ -71,5 +72,5 @@ collection: portfolio
 
 ### <font color='blue'> 4. 總結 </font>
 <font size=3>
-・記帳表單之設計，達成定期檢視財務狀況的習慣，成功控管年度預算，使得總支出金額較去年同期減少近 10,000 元。 <br/>
+・記帳表單之設計，得以定期檢視財務狀況，成功控管年度預算，總支出金額較去年同期減少近 10,000 元。 <br/>
 ・Personal Finance Dashboard 則有助於階段性檢核整體與各類別支出狀況。 </font>
