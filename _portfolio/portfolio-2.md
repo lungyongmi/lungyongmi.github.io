@@ -18,10 +18,23 @@ collection: portfolio
    1. Import Data <br/>
    2. Read and Explore Data <br/>
    3. Data Analysis <br/>
-   5. Find Insights <br/>
+   4. Find Insights <br/>
 </font><br/>
 
 **<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://github.com/lungyongmi/Analyze_Apps_Using_SQL">here.</a></b>
+
+**<font size=3> About Dataset </font>**
+<font size=3>
+01 id : app ID <br/>
+02 track_name: app name <br/>
+03 size_bytes: size in bytes <br/>
+05 price： Price amount <br/>
+06 rating_count_tot: user rating counts (for all version) <br/>
+08 user_rating: average user rating value (for all version)
+12 prime_genre: primary Genre <br/>
+13 sup_devices.num: number of supporting devices <br/>
+14 ipadSc_urls.num: number of screenshots showed for display <br/>
+15 lang.num: number of supported languages <br/></font>
 
 ### <font color='blue'> 1. Import Data 🔗 <a href="https://github.com/lungyongmi/Analyze_Apps_Using_SQL/blob/main/Import_Data.sql">Full Code</a> </font>
 **<font size=3> a. Create Tables and Import Data 🔗 </font>**
@@ -59,6 +72,8 @@ IGNORE 1 ROWS;
 
 ### <font color='blue'> 2. Read and Explore Data 🔗 <a href="https://github.com/lungyongmi/Analyze_Apps_Using_SQL/blob/main/Data_Analysis.sql">Full Code</a> </font>
 **<font size=3> a. Explore Data </font>**
+<font size=3> 7197 rows and 16 columns </font>
+
 ```sql
 -- Explore Data
 SELECT *
