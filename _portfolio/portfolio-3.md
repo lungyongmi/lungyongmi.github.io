@@ -57,16 +57,16 @@ collection: portfolio
 <font size=3> 使用 Excel 製作 Personal Finance Dashboard，分為 Overview 與 Monthly：</font>
 
 **<font size=3> Overview: </font>**
-<font size=3> &nbsp;&nbsp;&nbsp;&nbsp; ・Total Expenses<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ・Expenses by Month<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ・Expenses by Category<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ・TOP 5 Expenses</font>
+<font size=3>・Total Expenses<br/>
+・Expenses by Month<br/>
+・Expenses by Category<br/>
+・TOP 5 Expenses</font>
 <br/>
 
 **<font size=3> Monthly: </font>**
-<font size=3> &nbsp;&nbsp;&nbsp;&nbsp; ・Monthly Expenses by Category <br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ・Top 3 Sub-category by Category<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ・Monthly Overview<br/></font>
+<font size=3> ・Monthly Expenses by Category <br/>
+・Top 3 Sub-category by Category<br/>
+・Monthly Overview<br/></font>
 <br/>
 <img src='/images/P3.gif' width='130%' height='130%'>
 <br/>
