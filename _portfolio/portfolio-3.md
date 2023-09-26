@@ -21,7 +21,6 @@ collection: portfolio
 
 ### <font color='blue'> 1. 記帳表單設計 </font>
 <font size=3> 共設計 4 種工作表，分為 a. 每月紀錄、b. 支出類型、c. 年度預算與 d. 個人資產。 </font>
-<br/>
 
 **<font size=3> a. 每月紀錄</font>**
 <img src='/images/P3_01.png' width='130%' height='130%'>
@@ -56,15 +55,13 @@ collection: portfolio
 ### <font color='blue'> 3. 資料視覺化 </font>
 <font size=3> 使用 Excel 製作 Personal Finance Dashboard，分為 Overview 與 Monthly：</font>
 
-**<font size=3> Overview: </font>**
-<font size=3>・Total Expenses<br/>
+**<font size=3> Overview: </font>**<font size=3>・Total Expenses<br/>
 ・Expenses by Month<br/>
 ・Expenses by Category<br/>
 ・TOP 5 Expenses</font>
 <br/>
 
-**<font size=3> Monthly: </font>**
-<font size=3> ・Monthly Expenses by Category <br/>
+**<font size=3> Monthly: </font>**<font size=3> ・Monthly Expenses by Category <br/>
 ・Top 3 Sub-category by Category<br/>
 ・Monthly Overview<br/></font>
 <br/>
