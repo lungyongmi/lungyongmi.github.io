@@ -60,7 +60,8 @@ collection: portfolio
 <font size=3> &nbsp;&nbsp;&nbsp;&nbsp; ・Total Expenses<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ・Expenses by Month<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; ・Expenses by Category<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; ・TOP 5 Expenses<br/></font>
+&nbsp;&nbsp;&nbsp;&nbsp; ・TOP 5 Expenses</font>
+<br/>
 
 **<font size=3> Monthly: </font>**
 <font size=3> &nbsp;&nbsp;&nbsp;&nbsp; ・Monthly Expenses by Category <br/>
