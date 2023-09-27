@@ -4,7 +4,8 @@ collection: portfolio
 ---
 
 ### Project Goal: <br/>
-<font size=3> Find insights for the app developer who needs to decide what type of app to develop.<br/> </font>
+<font size=3> Find insights for the app developer who needs to decide what type of app to develop.<br/>
+分析 app 的樣貌協助 app 開發者決定開發類型與方向。 <br/> </font>
 
 ### Dataset Overview: <br/>
 <font size=3> Contain Information of apps on the Apple Store, including names, price, ratings, number of supporting languages, etc. </font>

@@ -4,7 +4,9 @@ collection: portfolio
 ---
 
 ### Project Goal: <br/>
-<font size=3> 設計記帳表單以控管個人年度預算與支出，並透過資料視覺化分析每月支出狀況。 </font>
+<font size=3> Design financial tracker to manage annual budget and expense, and use data visualization to find insights.<br/>設計記帳表單以控管個人年度預算與支出，並透過資料視覺化分析每月支出狀況。<br/> </font>
+
+Design accounting forms to control personal annual budgets and expenditures, and use data to visually analyze monthly expenditures.
 
 ### Dataset Overview: <br/>
 <font size=3> 此資料集為本人 2023 年度支出之紀錄。 </font>
