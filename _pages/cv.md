@@ -7,4 +7,4 @@ redirect_from:
   - /resume
 ---
 
-<img src='/images/Resume.jpg'>
+<img src='/images/Resume.jpg' width='80%' height='80%'>
