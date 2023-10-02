@@ -185,8 +185,7 @@ kmeans.fit(rfm_standard)
 cluster_labels = kmeans.labels_
 rfm_k3 = rfm.assign(Cluster = cluster_labels)
 
-rfm_k3.groupby(['Cluster', 'Segment']).agg({'CustomerID':'count',
-'RFM_Score':'mean'}).round(2)
+rfm_k3.groupby(['Cluster', 'Segment']).agg({'CustomerID':'count', 'RFM_Score':'mean'}).round(2)
 ```
 <img src='/images/P1_06.png' width='45%' height='45%'>
 <br/>
