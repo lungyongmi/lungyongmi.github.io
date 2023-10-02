@@ -8,7 +8,7 @@ collection: portfolio
 透過 RFM 模型與  KMeans 演算法進行客戶分群，找出目標客戶。<br/> </font>
 
 ### Dataset Overview: <br/>
-<font size=3> This is a transnational data set which contains all the transactions occurring between 2010/12/01 and 2011/12/09 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. </font>
+<font size=3> This is a transnational data set which contains all the transactions occurring between 2010/12/01 and 2011/12/09 for a UK-based and registered non-store online retail. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. </font>
 
 ### Data Source: <a href="https://archive.ics.uci.edu/dataset/352/online+retail">UCI Machine Learning Repository</a>
 ### Tools: Python, Power BI
