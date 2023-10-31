@@ -1,5 +1,5 @@
 ---
-title: "Project 1：Segment Customers with RFM and K-Means"
+title: "Project 1：Customer Segmentation with RFM Analysis Using K-Means"
 collection: portfolio
 ---
 
@@ -16,17 +16,17 @@ collection: portfolio
 
 ### Analysis Process:
 <font size=3> 
-   1. Read and Explore Data<br/>
+   1. Load Data<br/>
    2. Data Cleansing<br/>
-   3. Calculate RFM Metrics<br/>
-   4. Data Preprocessing<br/>
+   3. Explore Data & Cohort Analysis<br/>
+   4. RFM Analysis<br/>
    5. K-Means Clustering<br/>
    6. Conclusion
 </font><br/>
 
 **<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">here.</a></b>
 
-### <font color='blue'> 1. Read and Explore Data </font>
+### <font color='blue'> 1. Load Data </font>
 **<font size=3> a. Import Libraries </font>**
 ```python
 # Import Libraries for Dataframe and Visualization
@@ -46,7 +46,7 @@ import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 ```
 
-**<font size=3> b. Read and Explore Data </font>**<br/> <font size=3> There are 8 columns and 541909 rows. </font>
+**<font size=3> b. Load Data </font>**<br/> <font size=3> There are 8 columns and 541909 rows. </font>
 ```python
 df = pd.read_excel('Online Retail.xlsx')
 df.head()
@@ -55,25 +55,30 @@ df.head()
 <br/>
 
 ### <font color='blue'> 2. Data Cleansing </font>
-**<font size=3> a. Check and Drop Missing Values and Duplicates </font>**<br/>
-**<font size=3> b. Check and Change Data Types </font>**<br/> <font size=3> The data type of ‘CustomerID’ should be object type. </font>  
+**<font size=3> a. Check and Drop Missing Values </font>**<br/>
+**<font size=3> b. Check and Drop Duplicates </font>**<br/>
+**<font size=3> c. Check and Change Data Types </font>**<br/> <font size=3> The data type of ‘CustomerID’ should be object type. </font>  
 ```python
 df.dtypes
 df['CustomerID'] = df['CustomerID'].astype('int').astype('str')
 ```
 
-**<font size=3> c. Exclude Noisy Data </font>**<br/> <font size=3> Remove negative and 0 values in ‘Quantity’ and ‘UnitPrice’. </font>
+**<font size=3> d. Exclude Noisy Data </font>**<br/> <font size=3> Remove negative and 0 values in ‘Quantity’ and ‘UnitPrice’. </font>
 ```python
 df.describe()
 df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 ```
 
-### <font color='blue'> 3. Calculate RFM Metrics  🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
-**<font size=3> a. RFM represents Recency, Frequency and Monetary.<br/> &nbsp;&nbsp;&nbsp;&nbsp; RFM is a model used to segment customers base by their purchasing patterns.</font>**<br/>
+### <font color='blue'> 3. Explore Data & Cohort Analysis </font>
+
+
+### <font color='blue'> 4. RFM Analysis 🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
+**<font size=3> a. Calculate RFM Metrics<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM represents Recency, Frequency and Monetary.<br/> &nbsp;&nbsp;&nbsp;&nbsp; RFM is a model used to segment customers base by their purchasing patterns.</font>**<br/>
 <font size=3> &nbsp;&nbsp;&nbsp;&nbsp; R (Recency) : How long ago since the last purchase of each customer.<br/> &nbsp;&nbsp;&nbsp;&nbsp; F (Frequency) : How often each customer make purchases.<br/> &nbsp;&nbsp;&nbsp;&nbsp; M (Monetary) : Total amount of money each customer spends.</font><br/>
 
+**<font size=3> b. Detect and Remove Outliers using the IQR Method </font>**<br/> <font size=3>
 
-**<font size=3> b. RFM Score </font>**<br/> <font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font>
+**<font size=3> c. RFM Score </font>**<br/> <font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font>
 ```python
 r_labels = range(4, 0, -1)
 f_labels = range(1, 5)
@@ -98,49 +103,9 @@ rfm.head()
 <br/>
 
 
-### <font color='blue'> 4. Data Preprocessing  🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
-**<font size=3> a. Detect and Remove Outliers Using the IQR Method </font>**
+### <font color='blue'> 5. K-Means Clustering  🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
 
-```python
-x = ['Recency', 'Frequency', 'Monetary']
-f, ax = plt.subplots(figsize = (8, 6))
-
-sns.boxplot(data = rfm[x], palette = 'Set2')
-plt.yscale('log')
-plt.title('Outliers Variable Distribution', fontsize = 12)
-plt.xlabel('RFM')
-plt.ylabel('Range')
-plt.show()
-```
-<br/>
-<img src='/images/P1_03.png' width='75%' height='75%'>
-<br/>
-
-**<font size=3> b. RFM Segmentation by RFM Score </font>**<br/> <font size=3> Segment customers into 6 groups by RFM Score. </font>
-
-<style>
-table th:first-of-type {
-    width: 2cm;
-}
-table th:nth-of-type(2) {
-    width: 3cm;
-}
-</style>
-
-|Segment        |RFM Score| 
-|--------------:| |:--------|
-| champions          |> 10|
-| potential_loyalists|9-10| 
-| need_attention     |8   | 
-| about_to_sleep     |7   | 
-| at_risk            |5-6 | 
-| hibernating        |< 4 | 
- 
-<br/> 
-<img src='/images/P1_04.png' width='75%' height='75%'>
-<br/>
-
-**<font size=3> c. Standardization </font>**<br/> <font size=3> It’s important to rescale RFM values so that they have a comparable scale. </font>
+**<font size=3> a. Standardization </font>**<br/> <font size=3> It’s important to rescale RFM values so that they have a comparable scale. </font>
 
 ```python
 rfm_RFM = rfm[['Recency', 'Frequency', 'Monetary']]
@@ -152,7 +117,7 @@ rfm_standard.columns = ['Recency', 'Frequency', 'Monetary']
 rfm_standard.head()
 ```
 
-**<font size=3> d. Find the Optimal Number of Clusters Using Elbow Method </font>**
+**<font size=3> b. Find the Optimal Number of Clusters Using Elbow Method </font>**
 ```python
 wcss =[]
 range_k = range(1, 11)
@@ -175,8 +140,7 @@ plt.show()
 <img src='/images/P1_05.png' width='75%' height='75%'>
 <br/>
 
-### <font color='blue'> 5. K-Means Clustering  🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
-
+**<font size=3> c. K-Means Clustering </font>**
 ```python
 # Choose K=3
 kmeans = KMeans(n_clusters = 3, random_state = 46)
