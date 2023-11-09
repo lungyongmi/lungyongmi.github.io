@@ -50,7 +50,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 df = pd.read_excel('Online Retail.xlsx')
 df.head()
 ```
-<img src='/images/P1_01.png' width='75%' height='75%'>
+<img src='/images/P1_01.png' width='90%' height='90%'>
 <br/>
 
 ### <font color='blue'> 2. Data Cleansing </font>
@@ -73,7 +73,7 @@ df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 ```python
 df['Country'].value_counts(normalize = True).head(10).mul(100).round(1)
 ```
-<img src='/images/P1_02.png' width='50%' height='50%'>
+<img src='/images/P1_02.png' width='30%' height='30%'>
 <br/>
 
 **<font size=3> Monthly Transaction and Transaction Amount </font>**
@@ -87,12 +87,15 @@ df['Country'].value_counts(normalize = True).head(10).mul(100).round(1)
 <br/>
 <br/>
 
-### <font color='blue'> 4. RFM Analysis 🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
-**<font size=3> a. Calculate RFM Metrics<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM represents Recency, Frequency and Monetary.<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM is a model used to segment customers base by their purchasing patterns.</font>**<br/>
+### <font color='blue'> 4. RFM Analysis 🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font><br/>
+
+**<font size=3> a. Calculate RFM Metrics<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM represents Recency, Frequency and Monetary.<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM is a model used to segment customers base by their purchasing patterns.</font>** <br/>
+
 <font size=3> &nbsp;&nbsp;&nbsp;&nbsp; R (Recency) : How long ago since the last purchase of each customer.<br/> &nbsp;&nbsp;&nbsp;&nbsp; F (Frequency) : How often each customer make purchases.<br/> &nbsp;&nbsp;&nbsp;&nbsp; M (Monetary) : Total amount of money each customer spends.</font><br/>
 
 **<font size=3> b. Detect and Remove Extreme Outliers using the IQR Method </font>**<br/>
 **<font size=3> c. RFM Score </font>**<br/> <font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font> <br/>
+
 ```python
 r_labels = range(4, 0, -1)
 f_labels = range(1, 5)
@@ -118,8 +121,9 @@ rfm.tail()
 <br/>
 
 
-### <font color='blue'> 5. K-Means Clustering  🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
+### <font color='blue'> 5. K-Means Clustering  🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font><br/>
 **<font size=3> a. Data Preprocessing: Data Scaling & Standardization </font>**<br/>
+
 ```python
 # Undkew data with log scale
 rfm_log = rfm[['Recency', 'Frequency', 'Monetary']].apply(np.log, axis = 1).round(3)
@@ -168,7 +172,7 @@ rfm_k4.groupby('K_Cluster').agg({'Recency':'mean',
                                  'Monetary':'mean',
                                  'RFM_Score':'mean'}).round(1)
 ```
-<img src='/images/P1_06.png' width='75%' height='75%'>
+<img src='/images/P1_06.png' width='60%' height='60%'>
 <br/>
 
 ```python
@@ -189,14 +193,14 @@ plt.show()
 <img src='/images/P1_07.png' width='75%' height='75%'>
 <br/>
 
-### <font color='blue'> 6. Conclusion 🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
-
+### <font color='blue'> 6. Conclusion 🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font><br/>
+<br/>
 <font size = 3>
-    1. 數據顯示，2011年上半年客戶留存率平均比下半年高，建議了解上下半年度行銷策略上是否有變動。
-    2. 根據 11 月的交易數量與金額，以及交易數量前十大產品顯示，聖誕節慶前的 11 月為創造最大收益的時機。
-    3. 根據 KMeans 之分群結果，客戶類型與行銷策略建議如下：</font>
+    1. 數據顯示，2011年上半年客戶留存率平均比下半年高，建議了解上下半年度行銷策略上是否有變動。<br/>
+    2. 根據 11 月的交易數量與金額，以及交易數量前十大產品顯示，聖誕節慶前的 11 月為創造最大收益的時機。<br/>
+    3. 根據 KMeans 之分群結果，客戶類型與行銷策略建議如下：</font><br/>
 <img src='/images/P1_08.png' width='90%' height='90%'>
 <br/>
-
+<br/>
 
 <iframe title="Report Section" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiNDU2NTQ3ZjQtZGZkMi00ZDVlLWJiYTUtYzY3MTYyYTdmMDgwIiwidCI6IjE0ZmM0NDhkLWYxOWEtNDQ4ZS04MjRhLWQ4MmM3MWFhOTg4ZSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
