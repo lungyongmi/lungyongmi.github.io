@@ -50,7 +50,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 df = pd.read_excel('Online Retail.xlsx')
 df.head()
 ```
-<img src='/images/P1_01.png' width='50%' height='50%'>
+<img src='/images/P1_01.png' width='75%' height='75%'>
 <br/>
 
 ### <font color='blue'> 2. Data Cleansing </font>
@@ -73,7 +73,7 @@ df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 ```python
 df['Country'].value_counts(normalize = True).head(10).mul(100).round(1)
 ```
-<img src='/images/P1_02.png' width='90%' height='90%'>
+<img src='/images/P1_02.png' width='50%' height='50%'>
 <br/>
 
 **<font size=3> Monthly Transaction and Transaction Amount </font>**
@@ -83,16 +83,16 @@ df['Country'].value_counts(normalize = True).head(10).mul(100).round(1)
 **<font size=3> Corhort Analysis </font>** <br/>
 <font size=3> Create a few labels for cohort analysis: <br/> &nbsp;&nbsp;&nbsp;&nbsp; Invoice Period: The year and month of each transaction.<br/> &nbsp;&nbsp;&nbsp;&nbsp; Cohort Group: The year and month of a particular customer’s first purchase.<br/> &nbsp;&nbsp;&nbsp;&nbsp; Cohort Index: A number represents the number of months passed since the first purchase. <font/><br/>
 
-<img src='/images/P1_04.png' width='75%' height='75%'>
+<img src='/images/P1_04.png' width='90%' height='90%'>
 <br/>
-
+<br/>
 
 ### <font color='blue'> 4. RFM Analysis 🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
 **<font size=3> a. Calculate RFM Metrics<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM represents Recency, Frequency and Monetary.<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM is a model used to segment customers base by their purchasing patterns.</font>**<br/>
 <font size=3> &nbsp;&nbsp;&nbsp;&nbsp; R (Recency) : How long ago since the last purchase of each customer.<br/> &nbsp;&nbsp;&nbsp;&nbsp; F (Frequency) : How often each customer make purchases.<br/> &nbsp;&nbsp;&nbsp;&nbsp; M (Monetary) : Total amount of money each customer spends.</font><br/>
 
 **<font size=3> b. Detect and Remove Extreme Outliers using the IQR Method </font>**<br/>
-**<font size=3> c. RFM Score </font>**<br/> <font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font>
+**<font size=3> c. RFM Score </font>**<br/> <font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font> <br/>
 ```python
 r_labels = range(4, 0, -1)
 f_labels = range(1, 5)
@@ -168,7 +168,7 @@ rfm_k4.groupby('K_Cluster').agg({'Recency':'mean',
                                  'Monetary':'mean',
                                  'RFM_Score':'mean'}).round(1)
 ```
-<img src='/images/P1_06.png' width='90%' height='90%'>
+<img src='/images/P1_06.png' width='75%' height='75%'>
 <br/>
 
 ```python
