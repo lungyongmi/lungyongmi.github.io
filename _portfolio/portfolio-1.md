@@ -82,8 +82,7 @@ df['Country'].value_counts(normalize = True).head(10).mul(100).round(1)
 
 **<font size=3> Corhort Analysis </font>** <br/>
 <font size=3> Create a few labels for cohort analysis: <br/> &nbsp;&nbsp;&nbsp;&nbsp; Invoice Period: The year and month of each transaction.<br/> &nbsp;&nbsp;&nbsp;&nbsp; Cohort Group: The year and month of a particular customer’s first purchase.<br/> &nbsp;&nbsp;&nbsp;&nbsp; Cohort Index: A number represents the number of months passed since the first purchase. <font/><br/>
-<img src='/images/P1_04.png' width='90%' height='90%'>
-<br/>
+
 
 ### <font color='blue'> 4. RFM Analysis </font>
 **<font size=3> a. Calculate RFM Metrics<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM represents Recency, Frequency and Monetary.<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM is a model used to segment customers base by their purchasing patterns.</font>** <br/>
