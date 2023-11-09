@@ -112,7 +112,7 @@ rfm['RFM_Score'] = rfm[['R', 'F', 'M']].sum(axis = 1)
 rfm.reset_index(inplace = True)
 rfm.tail()
 ```
-<img src='/images/P1_05.png' width='90%' height='90%'>
+<img src='/images/P1_05.png' width='75%' height='75%'>
 <br/>
 
 
