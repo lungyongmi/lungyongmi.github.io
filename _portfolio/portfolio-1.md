@@ -50,7 +50,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 df = pd.read_excel('Online Retail.xlsx')
 df.head()
 ```
-<img src='/images/P1_01.png' width='90%' height='90%'>
+<img src='/images/P1_01.png' width='50%' height='50%'>
 <br/>
 
 ### <font color='blue'> 2. Data Cleansing </font>
@@ -73,22 +73,19 @@ df = df[(df['Quantity'] > 0) & (df['UnitPrice'] > 0)]
 ```python
 df['Country'].value_counts(normalize = True).head(10).mul(100).round(1)
 ```
-<img src='/images/P1_02.png' width='75%' height='75%'>
+<img src='/images/P1_02.png' width='90%' height='90%'>
 <br/>
 
 **<font size=3> Monthly Transaction and Transaction Amount </font>**
-<img src='/images/P1_03.png' width='75%' height='75%'>
+<img src='/images/P1_03.png' width='90%' height='90%'>
 <br/>
 
 **<font size=3> Corhort Analysis </font>** <br/>
-<font size=3> Create a few labels for cohort analysis:
-
-* Invoice Period: The year and month of each transaction.
-* Cohort Group: The year and month of a particular customer’s first purchase.
-* Cohort Index: A number represents the number of months passed since the first purchase. <font/><br/>
+<font size=3> Create a few labels for cohort analysis: <br/> &nbsp;&nbsp;&nbsp;&nbsp; Invoice Period: The year and month of each transaction.<br/> &nbsp;&nbsp;&nbsp;&nbsp; Cohort Group: The year and month of a particular customer’s first purchase.<br/> &nbsp;&nbsp;&nbsp;&nbsp; Cohort Index: A number represents the number of months passed since the first purchase. <font/><br/>
 
 <img src='/images/P1_04.png' width='75%' height='75%'>
 <br/>
+
 
 ### <font color='blue'> 4. RFM Analysis 🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font>
 **<font size=3> a. Calculate RFM Metrics<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM represents Recency, Frequency and Monetary.<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM is a model used to segment customers base by their purchasing patterns.</font>**<br/>
@@ -117,7 +114,7 @@ rfm['RFM_Score'] = rfm[['R', 'F', 'M']].sum(axis = 1)
 rfm.reset_index(inplace = True)
 rfm.tail()
 ```
-<img src='/images/P1_05.png' width='75%' height='75%'>
+<img src='/images/P1_05.png' width='90%' height='90%'>
 <br/>
 
 
@@ -171,7 +168,7 @@ rfm_k4.groupby('K_Cluster').agg({'Recency':'mean',
                                  'Monetary':'mean',
                                  'RFM_Score':'mean'}).round(1)
 ```
-<img src='/images/P1_06.png' width='45%' height='45%'>
+<img src='/images/P1_06.png' width='90%' height='90%'>
 <br/>
 
 ```python
@@ -198,7 +195,8 @@ plt.show()
     1. 數據顯示，2011年上半年客戶留存率平均比下半年高，建議了解上下半年度行銷策略上是否有變動。
     2. 根據 11 月的交易數量與金額，以及交易數量前十大產品顯示，聖誕節慶前的 11 月為創造最大收益的時機。
     3. 根據 KMeans 之分群結果，客戶類型與行銷策略建議如下：</font>
-<img src='/images/P1_08.png' width='75%' height='75%'>
+<img src='/images/P1_08.png' width='90%' height='90%'>
 <br/>
+
 
 <iframe title="Report Section" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiNDU2NTQ3ZjQtZGZkMi00ZDVlLWJiYTUtYzY3MTYyYTdmMDgwIiwidCI6IjE0ZmM0NDhkLWYxOWEtNDQ4ZS04MjRhLWQ4MmM3MWFhOTg4ZSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
