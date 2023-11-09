@@ -81,7 +81,7 @@ df['Country'].value_counts(normalize = True).head(10).mul(100).round(1)
 <br/>
 
 **<font size=3> Corhort Analysis </font>** <br/>
-<font size=3> Create a few labels for cohort analysis: <br/> &nbsp;&nbsp;&nbsp;&nbsp; Invoice Period: The year and month of each transaction.<br/> &nbsp;&nbsp;&nbsp;&nbsp; Cohort Group: The year and month of a particular customer’s first purchase.<br/> &nbsp;&nbsp;&nbsp;&nbsp; Cohort Index: A number represents the number of months passed since the first purchase. <font/><br/>
+
 
 
 ### <font color='blue'> 4. RFM Analysis </font>
