@@ -85,10 +85,9 @@ df['Country'].value_counts(normalize = True).head(10).mul(100).round(1)
 
 <img src='/images/P1_04.png' width='90%' height='90%'>
 <br/>
-<br/>
 
-### <font color='blue'> 4. RFM Analysis 🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font><br/>
 
+### <font color='blue'> 4. RFM Analysis 🔗 </font>
 **<font size=3> a. Calculate RFM Metrics<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM represents Recency, Frequency and Monetary.<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM is a model used to segment customers base by their purchasing patterns.</font>** <br/>
 
 <font size=3> &nbsp;&nbsp;&nbsp;&nbsp; R (Recency) : How long ago since the last purchase of each customer.<br/> &nbsp;&nbsp;&nbsp;&nbsp; F (Frequency) : How often each customer make purchases.<br/> &nbsp;&nbsp;&nbsp;&nbsp; M (Monetary) : Total amount of money each customer spends.</font><br/>
@@ -121,7 +120,7 @@ rfm.tail()
 <br/>
 
 
-### <font color='blue'> 5. K-Means Clustering  🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font><br/>
+### <font color='blue'> 5. K-Means Clustering </font><br/>
 **<font size=3> a. Data Preprocessing: Data Scaling & Standardization </font>**<br/>
 
 ```python
@@ -193,14 +192,12 @@ plt.show()
 <img src='/images/P1_07.png' width='75%' height='75%'>
 <br/>
 
-### <font color='blue'> 6. Conclusion 🔗 <a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">Full Code</a> </font><br/>
-<br/>
+### <font color='blue'> 6. Conclusion </font><br/>
 <font size = 3>
-    1. 數據顯示，2011年上半年客戶留存率平均比下半年高，建議了解上下半年度行銷策略上是否有變動。<br/>
-    2. 根據 11 月的交易數量與金額，以及交易數量前十大產品顯示，聖誕節慶前的 11 月為創造最大收益的時機。<br/>
-    3. 根據 KMeans 之分群結果，客戶類型與行銷策略建議如下：</font><br/>
+1. 數據顯示，2011年上半年客戶留存率平均比下半年高，建議了解上下半年度行銷策略上是否有變動。<br/>
+2. 根據 11 月的交易數量與金額，以及交易數量前十大產品顯示，聖誕節慶前的 11 月為創造最大收益的時機。<br/>
+3. 根據 KMeans 之分群結果，客戶類型與行銷策略建議如下：</font><br/>
 <img src='/images/P1_08.png' width='90%' height='90%'>
-<br/>
 <br/>
 
 <iframe title="Report Section" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiNDU2NTQ3ZjQtZGZkMi00ZDVlLWJiYTUtYzY3MTYyYTdmMDgwIiwidCI6IjE0ZmM0NDhkLWYxOWEtNDQ4ZS04MjRhLWQ4MmM3MWFhOTg4ZSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
