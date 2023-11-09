@@ -85,9 +85,8 @@ df['Country'].value_counts(normalize = True).head(10).mul(100).round(1)
 <img src='/images/P1_04.png' width='90%' height='90%'>
 <br/>
 
-### <font color='blue'> 4. RFM Analysis 🔗 </font>
+### <font color='blue'> 4. RFM Analysis </font>
 **<font size=3> a. Calculate RFM Metrics<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM represents Recency, Frequency and Monetary.<br/> &nbsp;&nbsp;&nbsp;&nbsp;RFM is a model used to segment customers base by their purchasing patterns.</font>** <br/>
-
 <font size=3> &nbsp;&nbsp;&nbsp;&nbsp; R (Recency) : How long ago since the last purchase of each customer.<br/> &nbsp;&nbsp;&nbsp;&nbsp; F (Frequency) : How often each customer make purchases.<br/> &nbsp;&nbsp;&nbsp;&nbsp; M (Monetary) : Total amount of money each customer spends.</font><br/>
 
 **<font size=3> b. Detect and Remove Extreme Outliers using the IQR Method </font>**<br/>
