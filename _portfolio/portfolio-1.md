@@ -23,7 +23,7 @@ collection: portfolio
    6. Conclusion
 </font><br/>
 
-**<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://github.com/lungyongmi/Segment_Customers_with_RFM_and_KMeans/blob/main/Segment%20Customers%20with%20RFM%20and%20K-Means_Full%20Code.ipynb">here.</a></b>
+**<font size=4 color='red'>🔗 Check out Full Code </font>**<b><a href="https://github.com/lungyongmi/Customer-Segmentation-with-RFM-Analysis-Using-K-Means/blob/main/Customer%20Segmentation%20with%20RFM%20Analysis%20Using%20K-Means.ipynb">here.</a></b>
 
 ### <font color='blue'> 1. Load Data </font>
 **<font size=3> a. Import Libraries </font>**
@@ -194,7 +194,7 @@ plt.show()
 2. 根據11月的交易數量與金額，以及交易數量前十大產品顯示，聖誕節慶前的11月為創造最大收益的時機。<br/>
 3. 根據 KMeans 之分群結果，客戶類型與行銷策略建議如下：</font>
 <br/>
-<img src='/images/P1_08.png' width='100%' height='100%'>
+&nbsp;&nbsp;&nbsp;&nbsp;<img src='/images/P1_08.png' width='100%' height='100%'>
 <br/>
 
 <iframe title="Report Section" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiNDU2NTQ3ZjQtZGZkMi00ZDVlLWJiYTUtYzY3MTYyYTdmMDgwIiwidCI6IjE0ZmM0NDhkLWYxOWEtNDQ4ZS04MjRhLWQ4MmM3MWFhOTg4ZSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
