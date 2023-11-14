@@ -194,7 +194,7 @@ plt.show()
 2. 根據11月的交易數量與金額，以及交易數量前十大產品顯示，聖誕節慶前的11月為創造最大收益的時機。<br/>
 3. 根據 KMeans 之分群結果，客戶類型與行銷策略建議如下：</font>
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<img src='/images/P1_08.png' width='100%' height='100%'>
+<img src='/images/P1_08.png' width='100%' height='100%'>
 <br/>
 
 <iframe title="Report Section" width="800" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiNDU2NTQ3ZjQtZGZkMi00ZDVlLWJiYTUtYzY3MTYyYTdmMDgwIiwidCI6IjE0ZmM0NDhkLWYxOWEtNDQ4ZS04MjRhLWQ4MmM3MWFhOTg4ZSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
