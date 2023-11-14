@@ -89,7 +89,7 @@ df['Country'].value_counts(normalize = True).head(10).mul(100).round(1)
 <font size=3> &nbsp;&nbsp;&nbsp;&nbsp; R (Recency) : How long ago since the last purchase of each customer.<br/> &nbsp;&nbsp;&nbsp;&nbsp; F (Frequency) : How often each customer make purchases.<br/> &nbsp;&nbsp;&nbsp;&nbsp; M (Monetary) : Total amount of money each customer spends.</font>
 
 **<font size=3> b. Detect and Remove Extreme Outliers using the IQR Method </font>**<br/>
-**<font size=3> c. RFM Score </font>**<br/> <font size=3> Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font> <br/>
+**<font size=3> c. RFM Score </font>**<br/> <font size=3>&nbsp;&nbsp;&nbsp;&nbsp; Rank each customer in these three categories on a scale of 1 to 4 (higher number, better result). </font> <br/>
 
 ```python
 r_labels = range(4, 0, -1)
@@ -193,6 +193,7 @@ plt.show()
 1. 數據顯示，2011年上半年客戶留存率平均比下半年高，建議了解上下半年度行銷策略上是否有變動。<br/>
 2. 根據11月的交易數量與金額，以及交易數量前十大產品顯示，聖誕節慶前的11月為創造最大收益的時機。<br/>
 3. 根據 KMeans 之分群結果，客戶類型與行銷策略建議如下：</font>
+<br/>
 <img src='/images/P1_08.png' width='100%' height='100%'>
 <br/>
 
